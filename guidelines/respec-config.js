@@ -8,10 +8,11 @@ var respecConfig = {
 	permalinkHide:     false,
 	tocIntroductory: true,
 	// specification status (e.g., WD, LC, NOTE, etc.). If in doubt use ED.
-	specStatus:           "ED",
-	//crEnd:                "2012-04-30",
+	specStatus:           "CR",
+	crEnd:                "2023-02-17",
+	implementationReportURI: "https://www.w3.org/WAI/WCAG22/implementation-report/",
 	//perEnd:               "2013-07-23",
-	//publishDate:          "2013-08-22",
+	publishDate:          "2022-01-24",
 	diffTool:             "http://www.aptest.com/standards/htmldiff/htmldiff.pl",
 	
 	// the specifications short name, as in https://www.w3.org/TR/short-name/
@@ -25,8 +26,8 @@ var respecConfig = {
 	
 	// if there is a previously published draft, uncomment this and set its YYYY-MM-DD date
 	// and its maturity status
-	//previousPublishDate:  "2014-06-12",
-	//previousMaturity:  "WD",
+	previousPublishDate:  "2021-09-06",
+	previousMaturity:  "CR",
 	prevRecURI: "https://www.w3.org/TR/WCAG/",
 	//previousDiffURI: "https://www.w3.org/TR/2014/REC-wai-aria-20140320/",
 	
