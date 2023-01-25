@@ -8,7 +8,7 @@ var respecConfig = {
 	permalinkHide:     false,
 	tocIntroductory: true,
 	// specification status (e.g., WD, LC, NOTE, etc.). If in doubt use ED.
-	specStatus:           "CR",
+	specStatus:           "CRD",
 	crEnd:                "2023-02-17",
 	implementationReportURI: "https://www.w3.org/WAI/WCAG22/implementation-report/",
 	//perEnd:               "2013-07-23",
