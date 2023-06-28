@@ -8,8 +8,9 @@ var respecConfig = {
 	permalinkHide:     false,
 	tocIntroductory: true,
 	// specification status (e.g., WD, LC, NOTE, etc.). If in doubt use ED.
-	specStatus:           "ED",
-	//crEnd:                "2012-04-30",
+	specStatus:           "PR",
+	crEnd:                "2023-06-16",
+	implementationReportURI: "https://www.w3.org/WAI/GL/WCAG22/CR/scorecard",
 	//perEnd:               "2013-07-23",
 	//publishDate:          "2013-08-22",
 	diffTool:             "http://www.aptest.com/standards/htmldiff/htmldiff.pl",
