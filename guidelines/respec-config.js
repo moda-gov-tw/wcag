@@ -10,7 +10,7 @@ var respecConfig = {
 	// specification status (e.g., WD, LC, NOTE, etc.). If in doubt use ED.
 	specStatus:           "PR",
 	crEnd:                "2023-06-16",
-	implementationReportURI: "https://www.w3.org/WAI/GL/WCAG22/CR/scorecard",
+	implementationReportURI: "https://www.w3.org/WAI/WCAG22/implementation-report/",
 	//perEnd:               "2013-07-23",
 	//publishDate:          "2013-08-22",
 	diffTool:             "http://www.aptest.com/standards/htmldiff/htmldiff.pl",
