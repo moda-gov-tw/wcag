@@ -8,7 +8,7 @@ var respecConfig = {
 	permalinkHide:     false,
 	tocIntroductory: true,
 	// specification status (e.g., WD, LC, NOTE, etc.). If in doubt use ED.
-	specStatus:           "ED",
+	specStatus:           "REC",
 	//crEnd:                "2012-04-30",
 	//perEnd:               "2013-07-23",
 	//publishDate:          "2013-08-22",
@@ -19,14 +19,14 @@ var respecConfig = {
 	
 	
 	// if you wish the publication date to be other than today, set this
-	//publishDate:  "2014-12-11",
+	publishDate:  "2023-08-01",
 	copyrightStart:  "2020",
 	license: "document",
 	
 	// if there is a previously published draft, uncomment this and set its YYYY-MM-DD date
 	// and its maturity status
-	//previousPublishDate:  "2014-06-12",
-	//previousMaturity:  "WD",
+	previousPublishDate:  "2018-06-05",
+	previousMaturity:  "REC",
 	prevRecURI: "https://www.w3.org/TR/WCAG/",
 	//previousDiffURI: "https://www.w3.org/TR/2014/REC-wai-aria-20140320/",
 	
