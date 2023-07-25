@@ -131,7 +131,7 @@ var respecConfig = {
 	],
 	*/
 	
-	// errata: 'https://www.w3.org/2010/02/rdfa/errata.html',
+	errata: "https://www.w3.org/WAI/WCAG21/errata/",
 	
 	// name of the WG
 	group:           "ag",
