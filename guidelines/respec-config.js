@@ -20,6 +20,7 @@ var respecConfig = {
 	
 	// if you wish the publication date to be other than today, set this
 	publishDate:  "2023-08-01",
+	implementationReportURI: "https://www.w3.org/WAI/WCAG21/implementation-report/",
 	copyrightStart:  "2020",
 	license: "document",
 	
