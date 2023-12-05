@@ -1,54 +1,43 @@
-<dt><dfn>general flash and red flash thresholds</dfn></dt>
+<dt><dfn>一般閃爍和紅閃爍閾值</dfn></dt>
 <dd>
    
-   <p>a <a>flash</a> or rapidly changing image sequence is below the threshold (i.e., content <strong>passes</strong>) if any of the following are true:
+   <p>如果滿足以下任何條件，則<a>閃爍</a>或快速變化的圖像順序低於閾值（即內容取得<strong>通過</strong>）:
    </p>
    
    <ol>
       
-      <li>there are no more than three <strong>general flashes</strong> and / or no more than three <strong>red flashes</strong> within any one-second period; or
+      <li>任何一秒鐘內的<strong>一般閃爍</strong>和/或<strong>紅閃爍</strong>不超過三次; 或
       </li>
       
-      <li>the combined area of flashes occurring concurrently occupies no more than a total
-         of .006 steradians within any 10 degree visual field on the screen (25% of any 10
-         degree visual field on the screen) at typical viewing distance
+      <li>在典型的觀看距離下，螢幕上任何10度視野內（螢幕上任何10度視野的25％）內同時發生閃光的組合區域，總共不超過0.006個球面度
       </li>
       
    </ol>
    
-   <p>where:</p>
+   <p>其中：</p>
    
    <ul>
       
-      <li>A <strong>general flash</strong> is defined as a pair of opposing changes in <a>relative luminance</a> of 10% or more of the maximum relative luminance (1.0) where the relative luminance of
-         the darker image is below 0.80; and where "a pair of opposing changes" is an increase
-         followed by a decrease, or a decrease followed by an increase, and
+      <li><strong>一般閃爍</strong>被定義為一對相反的<a>相對亮度</a>於其中，最大相對亮度為10％或更多，而較暗圖像的相對亮度則低於0.80；且「一對相反的變化」即相對亮度增加後隨後減少，或減少後隨後增加，而
       </li>
       
-      <li>A <strong>red flash</strong> is defined as any pair of opposing transitions involving a saturated red
+      <li><strong>紅閃爍</strong>被定義為任何一對牽涉到飽和紅色的相反轉變
       </li>
       
    </ul>
    
-   <p><em>Exception:</em> Flashing that is a fine, balanced, pattern such as white noise or an alternating
-      checkerboard pattern with "squares" smaller than 0.1 degree (of visual field at typical
-      viewing distance) on a side does not violate the thresholds.
+   <p><em>例外：</em>閃光是一種精細及平衡的圖案，例如白噪聲或交替的棋盤圖案，一側小於0.1度（典型觀察距離的視野）的「正方形」並不違反閾值。
    </p>
    
-   <p class="note">For general software or Web content, using a 341 x 256 pixel rectangle anywhere on the displayed screen area when the content is viewed at 1024 x 768 pixels will provide a good estimate of a 10 degree visual field for standard screen sizes and viewing distances (e.g., 15-17 inch screen at 22-26 inches). This resolution of 75 - 85 ppi is known to be lower, and thus more conservative than the nominal CSS pixel resolution of 96 ppi in CSS specifications. Higher resolutions displays showing the same rendering of the content yield smaller and safer images so it is lower resolutions that are used to define the thresholds.
+   <p class="note">對一般的軟體或網頁內容來說，若螢幕尺寸介於15吋至17吋之間，解析度為1024×768，則一個341×256像素的矩型，就是距離雙眼56至66公分遠的標準檢視距離中，10度視野的良好估計情況。在更高解析度的情況中，同樣的內容範圍會被繪製成更小的圖型，因而也更安全，所以定義此閾值時採用較低的解析度。
    </p>
    
-   <p class="note">A transition is the change in relative luminance (or relative luminance/color for
-      red flashing) between adjacent peaks and valleys in a plot of relative luminance (or
-      relative luminance/color for red flashing) measurement against time. A flash consists
-      of two opposing transitions.
+   <p class="note">此處「轉變」指的是在將相對亮度(在紅閃爍中為相對亮度／色彩)根據時間量測後，在繪製圖中毗鄰的峰值與谷值間的相對亮度(在紅閃爍中為相對亮度／色彩)變更。一次閃爍包含兩次轉變。
    </p>
 
-   <p class="note">The working definition (as of 2022) in the field for <strong>"pair of opposing transitions involving a saturated red"</strong> is a pair of opposing transitions where, one transition is either to or from a state with a value R/(R + G + B) that is greater than or equal to 0.8, and the difference between states is more than 0.2 (unitless) in the CIE 1976 UCS chromaticity diagram. [[ISO_9241-391]] </p>
+   <p class="note">截至2022年，在這個領域中對<strong>「一組牽涉到飽和紅色的相反轉變」</strong>操作定義是指涉及每一次轉變的單一或兩個狀態當中R÷(R＋G＋B)≧0.8，並且兩個狀態之間的差異超過CIE 1976 UCS 色度圖上的 0.2（無單位）。[ISO_9241-391]</p>
    
-   <p class="note">Tools are available that will carry out analysis from video screen capture. However,
-      no tool is necessary to evaluate for this condition if flashing is less than or equal
-      to 3 flashes in any one second. Content automatically passes (see #1 and #2 above).
+   <p class="note">可使用工具從影片螢幕擷取中來進行分析。但是，如果閃光在任何一秒內閃爍小於或等於3次，則無需工具來評估此情況。內容會自動傳遞（參見上述的#1和#2）
    </p>
    
 </dd>

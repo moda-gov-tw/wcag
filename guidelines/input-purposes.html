@@ -1,65 +1,65 @@
 <section id="input-purposes">
-	<h2>Input Purposes for User Interface Components</h2>
-	<p>This section contains a listing of common <a>user interface component</a> input purposes. The terms below are not keywords that must be used, but instead represent purposes that must be captured in the taxonomy adopted by a webpage. Where applicable, authors mark up controls with the chosen taxonomy to indicate the semantic purpose. This provides the potential for user agents and assistive technologies to apply personalized presentations that can enable more people to understand and use the content.</p>
+	<h2>使用者介面元件的輸入目的</h2>
+	<p>本節包含常見<a>使用者介面元件</a>輸入欄位之列表。以下術語並非常用關鍵字，而是依網頁收集個人資訊之目的分類中所獲取的目的。在適用的情況下，網頁設計者使用所選分類標記控制項，以用來指示語義目的。這為使用者代理和輔助科技提供了應用個性化呈現的潛力，使更多人能夠理解和使用其內容。</p>
   
-  <p class="note">The list of input type purposes is based on the control purposes defined in the <a href="https://www.w3.org/TR/html52/sec-forms.html#sec-autofill">HTML 5.2 Autofill field section</a>, but it is important to understand that a different technology may have some or all of the same concepts defined in its specification and only the concepts that are mapped to the meanings below are required.</p>
+  <p class="note">輸入類型列表參照<a href="https://www.w3.org/TR/html52/sec-forms.html#sec-autofill">HTML 5.2自動填表欄位區段</a>中所定義的目的，應理解不同的技術可能具有其規範中定義的部分或全部相同概念，因此反映出大致含義即可。</p>
 	    
-  <p>The following input control purposes are intended to relate to the user of the content and pertain only to information related to that individual.</p>
+  <p>以下輸入項目內容與使用者相關，並且僅涉及與該使用者個人相關的資訊。</p>
 
 	<ul>
-		<li><strong>name</strong> - Full name</li>
-		<li><strong>honorific-prefix</strong> - Prefix or title (e.g., "Mr.", "Ms.", "Dr.", "M<sup>lle</sup>")</li>
-		<li><strong>given-name</strong> - Given name (in some Western cultures, also known as the <i>first name</i>)</li>
-		<li><strong>additional-name</strong> - Additional names (in some Western cultures, also known as <i>middle names</i>, forenames other than the first name)</li>
-		<li><strong>family-name</strong> - Family name (in some Western cultures, also known as the <i>last name</i> or <i>surname</i>)</li>
-		<li><strong>honorific-suffix</strong> - Suffix (e.g., "Jr.", "B.Sc.", "MBASW", "II")</li>
-		<li><strong>nickname</strong> - Nickname, screen name, handle: a typically short name used instead of the full name</li>
-		<li><strong>organization-title</strong> - Job title (e.g., "Software Engineer", "Senior Vice President", "Deputy Managing Director")</li>
-		<li><strong>username</strong> - A username</li>
-		<li><strong>new-password</strong> - A new password (e.g., when creating an account or changing a password)</li>
-		<li><strong>current-password</strong> - The current password for the account identified by the <strong>username</strong> field (e.g., when logging in)</li>
-		<li><strong>organization</strong> - Company name corresponding to the person, address, or contact information in the other fields associated with this field</li>
-		<li><strong>street-address</strong> - Street address (multiple lines, newlines preserved)</li>
-		<li><strong>address-line1</strong> - Street address (one line per field, line 1)</li>
-		<li><strong>address-line2</strong> - Street address (one line per field, line 2)</li>
-		<li><strong>address-line3</strong> - Street address (one line per field, line 3)</li>
-		<li><strong>address-level4</strong> - The most fine-grained administrative level, in addresses with four administrative levels</li>
-		<li><strong>address-level3</strong> - The third administrative level, in addresses with three or more administrative levels</li>
-		<li><strong>address-level2</strong> - The second administrative level, in addresses with two or more administrative levels; in the countries with two administrative levels, this would typically be the city, town, village, or other locality within which the relevant street address is found</li>
-		<li><strong>address-level1</strong> - The broadest administrative level in the address, i.e., the province within which the locality is found; for example, in the US, this would be the state; in Switzerland it would be the canton; in the UK, the post town</li>
-		<li><strong>country</strong> - Country code</li>
-		<li><strong>country-name</strong> - Country name</li>
-		<li><strong>postal-code</strong> - Postal code, post code, ZIP code, CEDEX code (if CEDEX, append "CEDEX", and the <i lang="fr">dissement</i>, if relevant, to the <strong>address-level2</strong> field)</li>
-		<li><strong>cc-name</strong> - Full name as given on the payment instrument</li>
-		<li><strong>cc-given-name</strong> - Given name as given on the payment instrument (in some Western cultures, also known as the <i>first name</i>)</li>
-		<li><strong>cc-additional-name</strong> - Additional names given on the payment instrument (in some Western cultures, also known as <i>middle names</i>, forenames other than the first name)</li>
-		<li><strong>cc-family-name</strong> - Family name given on the payment instrument (in some Western cultures, also known as the <i>last name</i> or <i>surname</i>)</li>
-		<li><strong>cc-number</strong> - Code identifying the payment instrument (e.g., the credit card number)</li>
-		<li><strong>cc-exp</strong> - Expiration date of the payment instrument</li>
-		<li><strong>cc-exp-month</strong> - Month component of the expiration date of the payment instrument</li>
-		<li><strong>cc-exp-year</strong> - Year component of the expiration date of the payment instrument</li>
-		<li><strong>cc-csc</strong> - Security code for the payment instrument (also known as the card security code (CSC), card validation code (CVC), card verification value (CVV), signature panel code (SPC), credit card ID (CCID), etc)</li>
-		<li><strong>cc-type</strong> - Type of payment instrument</li>
-		<li><strong>transaction-currency</strong> - The currency that the user would prefer the transaction to use</li>
-		<li><strong>transaction-amount</strong> - The amount that the user would like for the transaction (e.g., when entering a bid or sale price)</li>
-		<li><strong>language</strong> - Preferred language</li>
-		<li><strong>bday</strong> - Birthday</li>
-		<li><strong>bday-day</strong> - Day component of birthday</li>
-		<li><strong>bday-month</strong> - Month component of birthday</li>
-		<li><strong>bday-year</strong> - Year component of birthday</li>
-		<li><strong>sex</strong> - Gender identity (e.g., Female, Fa’afafine)</li>
-		<li><strong>url</strong> - Home page or other Web page corresponding to the company, person, address, or contact information in the other fields associated with this field</li>
-		<li><strong>photo</strong> - Photograph, icon, or other image corresponding to the company, person, address, or contact information in the other fields associated with this field</li>
-		<li><strong>tel</strong> - Full telephone number, including country code</li>
-		<li><strong>tel-country-code</strong> - Country code component of the telephone number</li>
-		<li><strong>tel-national</strong> - Telephone number without the country code component, with a country-internal prefix applied if applicable</li>
-		<li><strong>tel-area-code</strong> - Area code component of the telephone number, with a country-internal prefix applied if applicable</li>
-		<li><strong>tel-local</strong> - Telephone number without the country code and area code components</li>
-		<li><strong>tel-local-prefix</strong> - First part of the component of the telephone number that follows the area code, when that component is split into two components</li>
-		<li><strong>tel-local-suffix</strong> - Second part of the component of the telephone number that follows the area code, when that component is split into two components</li>
-		<li><strong>tel-extension</strong> - Telephone number internal extension code</li>
-		<li><strong>email</strong> - E-mail address</li>
-		<li><strong>impp</strong> - URL representing an instant messaging protocol endpoint (for example, "<strong>aim:goim?screenname=example</strong>" or "<strong>xmpp:fred@example.net</strong>")</li>
+		<li><strong>名稱</strong> - 全名</li>
+		<li><strong>敬語-尊稱</strong> - 尊稱或頭銜（例如，“先生”、“女士”、“博士”，“女士”<sup>未婚</sup>")</li>
+		<li><strong>教名</strong> - 教名（在一些西方文化中，又稱為<i>名字</i>）</li>
+		<li><strong>稱號</strong> - 稱號（在某些西方文化中，也稱為<i>中間名</i>，是除名字以外的名稱）</li>
+		<li><strong>姓氏</strong> - 姓氏（在某些西方文化中，也稱為<i>last name</i>或<i>surname</i>）</li>
+		<li><strong>敬語-尊稱</strong> - 尊稱（例如，“次代(Jr)”，“ 理學士(B.Sc)”，“MBASW”，“二世(II)）</li>
+		<li><strong>暱稱</strong> - 暱稱、藝名、愛稱：通常使用短名而非全名</li>
+		<li><strong>組織-頭銜</strong> - 職稱（例如「軟體工程師」、「資深副總裁」或「副總經理」）</li>
+		<li><strong>用戶名稱</strong> - 用戶名</li>
+		<li><strong>新密碼</strong> - 新密碼（例如，在初次建立帳戶或更改密碼時）</li>
+		<li><strong>當前密碼</strong> - <strong>使用者</strong>登入時使用之密碼（例如，登錄時）</li>
+		<li><strong>組織</strong> - 使用者人員、地址或聯繫資訊之對應公司的名稱</li>
+		<li><strong>街道地址</strong> - 街道地址（多行，保留換行符）</li>
+		<li><strong>地址行1</strong> - 街道地址（每個字段一行，第1行）</li>
+		<li><strong>地址行2</strong> - 街道地址（每個字段一行，第2行）</li>
+		<li><strong>地址行3</strong> - 街道地址（每個字段一行，第3行）</li>
+		<li><strong>地址級4</strong> - 在具有四個管理級別地址中的最細分的管理級別</li>
+		<li><strong>地址級3</strong> - 第三級管理級別，其地址為三級或更多級別</li>
+		<li><strong>地址級2</strong> - 第二級管理級別，地址為兩級或更多級別; 在具有兩個行政級別的國家/地區，這通常是城市、城鎮、村莊或其他相關街道地址的地方</li>
+		<li><strong>地址級1</strong> - 地址中最廣泛的行政級別，亦即，省份的地點; 例如，在美國，這將是州; 在瑞士，它將是小行政區; 在英國，則為郵鎮</li>
+		<li><strong>國家</strong> - 國家代碼</li>
+		<li><strong>國家名稱</strong> - 國家/地區名稱</li>
+		<li><strong>郵政編號</strong> - 郵政編碼(Postal code)、郵政編碼(post code)、郵政編碼(ZIP code)、特別遞送企業郵件(CEDEX)代碼（如果是CEDEX，則加註“CEDEX”及與<strong>地址級別2</strong>相關的說明</li>
+		<li><strong>cc-name</strong> - 信用卡上所提供的全名</li>
+		<li><strong>cc-given-name</strong> - 信用卡上所提供的名字</li>
+		<li><strong>cc-additional-name</strong> - 信用卡所提供的稱號（在某些西方文化中，也稱為<i>中間名</i>，除了名字以外的名稱）</li>
+		<li><strong>cc-family-name</strong> - 信用卡的姓氏（在某些西方文化中，也稱為，<i>last name</i> 或<i>surname</i>）</li>
+		<li><strong>cc-number</strong> - 信用卡的代碼（例如，信用卡號）</li>
+		<li><strong>cc-exp</strong> - 信用卡到期日期</li>
+		<li><strong>cc-exp-month</strong> - 信用卡到期日的月份部分</li>
+		<li><strong>cc-exp-year</strong> - 信用卡的到期日的年份部分</li>
+		<li><strong>cc-csc</strong> - 信用卡的安全代碼（也稱為卡安全代碼（CSC）、卡驗證代碼（CVC）、卡驗證值（CVV）、簽名面板代碼（SPC）、信用卡ID（CCID），等等）</li>
+		<li><strong>cc-type</strong> - 信用卡的類型</li>
+		<li><strong>transaction-currency</strong> - 用戶希望交易使用的貨幣</li>
+		<li><strong>transaction-amount</strong> - 用戶希望進行交易的金額（例如，在輸入買賣價）</li>
+		<li><strong>language</strong> - 首選語言</li>
+		<li><strong>bday</strong> - 生日</li>
+		<li><strong>bday-day</strong> - 生日的日期</li>
+		<li><strong>bday-month</strong> - 生日的月份</li>
+		<li><strong>bday-year</strong> - 生日的年份</li>
+		<li><strong>sex</strong> - 性別（例如，女性，Fa'afafine）</li>
+		<li><strong>url</strong> - 與相關公司、人員、地址或聯繫資訊對應的網頁鏈結</li>
+		<li><strong>photo</strong> - 與相關公司、人員、地址或聯繫資訊對應的照片、或圖像</li>
+		<li><strong>tel</strong> - 完整的電話號碼，包括國家代碼</li>
+		<li><strong>tel-country-code</strong> - 電話號碼中的國碼</li>
+		<li><strong>tel-national</strong> - 沒有縣代碼部分的電話號碼，如果適用，則應使用國家/地區內部的代碼</li>
+		<li><strong>tel-area-code</strong> - 電話號碼的區碼，如果適用，應使用國家/地區內部的代碼</li>
+		<li><strong>tel-local</strong> - 沒有國家代碼和區碼的電話號碼</li>
+		<li><strong>tel-local-prefix</strong> - 當該電話號碼的組成被分成兩個部分時，區碼後面的電話號碼第一部分</li>
+		<li><strong>tel-local-suffix</strong> - 區碼後面電話號碼組件的第二部分，當該電話號碼的組成被分成兩個部分時</li>
+		<li><strong>tel-extension</strong> - 分機號碼</li>
+		<li><strong>email</strong> - 電子郵件地址</li>
+		<li><strong>impp</strong> - 代表即時通訊協定端點的網址內註記（例如，"<strong>：goim?screenname = example</strong>"或"<strong>：fred@example.net</strong>"）</li>
 	</ul>
 	
 </section>

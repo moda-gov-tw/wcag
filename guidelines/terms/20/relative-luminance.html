@@ -1,29 +1,27 @@
-<dt><dfn>relative luminance</dfn></dt>
+<dt><dfn>相對亮度</dfn></dt>
 <dd>
    
-   <p>the relative brightness of any point in a colorspace, normalized to 0 for darkest
-      black and 1 for lightest white
+   <p>色域中任一點的相對亮度，將最暗的黑色標準化為0，最亮的白色標準化為1
    </p>
    
   <div class="note">
-   <p>For the sRGB colorspace, the relative luminance of a color is defined as L = 0.2126
-      * <strong>R</strong> + 0.7152 * <strong>G</strong> + 0.0722 * <strong>B</strong> where <strong>R</strong>, <strong>G</strong> and <strong>B</strong> are defined as:
+   <p>對於sRGB色彩空間，色彩的相對亮度定義為L = 0.2126 *<strong>R</strong> + 0.7152 * <strong>G</strong> + 0.0722 * <strong>B</strong>其中<strong>R</strong>，<strong>G</strong>和<strong>B</strong>定義為：
    </p>
    
    <ul>
       
-      <li>if RsRGB &lt;= 0.04045 then <strong>R</strong> = RsRGB/12.92 else <strong>R</strong> = ((RsRGB+0.055)/1.055) ^ 2.4
+      <li>如果　RsRGB  &lt;= 0.04045 則 <strong>R</strong> = RsRGB/12.92 否則 <strong>R</strong> = ((RsRGB+0.055)/1.055) ^ 2.4
       </li>
       
-      <li>if GsRGB &lt;= 0.04045 then <strong>G</strong> = GsRGB/12.92 else <strong>G</strong> = ((GsRGB+0.055)/1.055) ^ 2.4
+      <li>如果 GsRGB &lt;= 0.04045 則 <strong>G</strong> = GsRGB/12.92 否則 <strong>G</strong> = ((GsRGB+0.055)/1.055) ^ 2.4
       </li>
       
-      <li>if BsRGB &lt;= 0.04045 then <strong>B</strong> = BsRGB/12.92 else <strong>B</strong> = ((BsRGB+0.055)/1.055) ^ 2.4
+      <li>如果 BsRGB &lt;= 0.04045 則 <strong>B</strong> = BsRGB/12.92 否則 <strong>B</strong> = ((BsRGB+0.055)/1.055) ^ 2.4
       </li>
       
    </ul>
    
-   <p>and RsRGB, GsRGB, and BsRGB are defined as:</p>
+   <p>而RsRGB、GsRGB和BsRGB定義為：</p>
    
    <ul>
       
@@ -35,29 +33,25 @@
       
    </ul>
    
-   <p>The "^" character is the exponentiation operator. (Formula taken from 
-      [[SRGB]].)
+   <p>字元“^”是指數化運算符號。 （公式取自 [SRGB]）。
    </p>
 
   </div>
 
-  <p class="note">Before May 2021 the value of 0.04045 in the definition was different (0.03928). It was taken from an older version of the specification and has been updated. It has no practical effect on the calculations in the context of these guidelines.</p>
+  <p class="note">2021 年 5 月之前，定義中的 0.04045 值有所不同 (0.03928)。這個數值取自舊版本的規範並已更新。對這些指南中的計算沒有實際影響。</p>
   
-   <p class="note">Almost all systems used today to view Web content assume sRGB encoding. Unless it
-      is known that another color space will be used to process and display the content,
-      authors should evaluate using sRGB colorspace. If using other color spaces, see <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum">Understanding Success Criterion 1.4.3</a>.
+   <p class="note">目前幾乎所有用於查看網頁內容的系統都採用sRGB編碼。除非知道將使用另一個色彩空間來處理和顯示內容，
+      否則網頁設計者應使用sRGB色彩空間進行評估。如果使用其他色彩空間，請參閱<a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum">了解成功準則1.4.3。</a>.
    </p>
    
-   <p class="note">If dithering occurs after delivery, then the source color value is used. For colors
-      that are dithered at the source, the average values of the colors that are dithered
-      should be used (average R, average G, and average B).
+   <p class="note">如果抖色發生在內容傳達到使用者代理後，就應使用來源色彩值；如果抖色發生在內容來源端，應使用抖色之色彩平均值，
+      即平均R、平均G、平均B，來進行相關運算。
    </p>
    
-   <p class="note">Tools are available that automatically do the calculations when testing contrast and
-      flash.
+   <p class="note">可以在測試對比度和閃爍時使用工具自動進行計算。
    </p>
    
-   <p class="note">A <a href="relative-luminance.html">separate page giving the relative luminance definition using MathML</a> to display the formulas is available.
+   <p class="note">使用<a href="relative-luminance.html">MathML版本</a>的相對亮度定義。
    </p>
    
 </dd>

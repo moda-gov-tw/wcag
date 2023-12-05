@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
 
-        <title>Web Content Accessibility Guidelines (WCAG) 2.1</title>
+        <title>網頁內容可及性規範（WCAG）2.1</title>
     	<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove"></script>
     	<script src="../script/wcag.js" class="remove"></script>
     	<script src="respec-config.js" class="remove"></script>
@@ -13,133 +13,142 @@
     </head>
     <body>
         <section id="abstract">
-            <p>Web Content Accessibility Guidelines (WCAG) 2.1 covers a wide range of recommendations for making Web content more accessible. Following these guidelines will make content more accessible to a wider range of people with disabilities, including accommodations for blindness and low vision, deafness and hearing loss, limited movement, speech disabilities, photosensitivity, and combinations of these, and some accommodation for learning disabilities and cognitive limitations; but will not address every user need for people with these disabilities. These guidelines address accessibility of web content on desktops, laptops, tablets, and mobile devices. Following these guidelines will also often make Web content more usable to users in general.</p>
-        	<p>WCAG 2.1 success criteria are written as testable statements that are not technology-specific. Guidance about satisfying the success criteria in specific technologies, as well as general information about interpreting the success criteria, is provided in separate documents. See <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) Overview</a> for an introduction and links to WCAG technical and educational material.</p>
-            <p>WCAG 2.1 extends <a href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines 2.0</a> [[WCAG20]], which was published as a W3C Recommendation December 2008. Content that conforms to WCAG 2.1 also conforms to WCAG 2.0. The WG intends that for policies requiring conformance to WCAG 2.0, WCAG 2.1 can provide an alternate means of conformance. The publication of WCAG 2.1 does not deprecate or supersede WCAG 2.0. While WCAG 2.0 remains a W3C Recommendation, the W3C advises the use of WCAG 2.1 to maximize future applicability of accessibility efforts. The W3C also encourages use of the most current version of WCAG when developing or updating Web accessibility policies.</p>
+            <p>網頁內容可及性規範（Web Content Accessibility Guidelines, 以下簡稱WCAG）2.1涵蓋了使網頁內容更易於取得的廣泛建議。遵循這些規範將使網頁內容對更多身心障礙者（包括失明和弱視、耳聾和聽力損失、行動受限、言語障礙、光敏感和多重身心障礙者，以及部分學習障礙和認知受限者）而言更為容易取得；但不會滿足這些使用者的全部需求。這些規範提及桌上型電腦、筆記型電腦、平板電腦和行動裝置的網頁內容之無障礙問題。遵循這些規範通常也能使網頁內容更便於一般使用者使用。</p>
+        	<p>WCAG 2.1成功準則被編寫為不特定技術的可測試聲明。有關滿足特定技術的成功準則的指南以及有關解釋成功準則的一般資訊在單獨的文件中提供。請參閱WCAG概述（ <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) Overview</a> ），以獲取WCAG技術和教材的介紹和連結。</p>
+            <p>WCAG 2.1為 <a href="https://www.w3.org/TR/WCAG20/">網頁內容可及性規範 2.0</a> 之延伸，於2008年12月作為W3C推薦標準（W3C Recommendation）發布。符合WCAG 2.1的內容也符合WCAG 2.0。工作小組（以下簡稱WG）希望，對於要求符合WCAG 2.0 的需求，WCAG 2.1能夠提供一致性的替代方法。WCAG 2.1的發布並未意圖棄用或取代WCAG 2.0。雖然WCAG 2.0仍然是W3C推薦標準，但W3C建議使用WCAG 2.1以便將來最大化無障礙成效的可及性。W3C也鼓勵在開發或更新網頁可及性政策時，使用WCAG的最新版本。
+            </p>
         </section>
         <section id="sotd">
-            <p>This is a <a href="https://www.w3.org/2018/Process-20180201/#RecsW3C">Recommendation</a> of WCAG 2.1 by the <a href="https://www.w3.org/WAI/GL/">Accessibility Guidelines Working Group</a>. This incorporates <a href="https://www.w3.org/WAI/WCAG21/errata/">errata</a> and are described in the <a href="#changelog">change log</a>. At some point additional changes might be incorporated into an <a href="https://www.w3.org/2018/Process-20180201/#revised-rec">Edited or Amended Recommendation</a>.</p>
-            <p>To comment, <a href="https://github.com/w3c/wcag/issues/new">file an issue in the <abbr title="World Wide Web Consortium">W3C</abbr> WCAG GitHub repository</a>. Although the proposed Success Criteria in this document reference issues tracking discussion, the Working Group requests that public comments be filed as new issues, one issue per discrete comment. It is free to create a GitHub account to file issues. If filing issues in GitHub is not feasible, send email to <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%202.1%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). </p>
+            <p>這是<a href="https://www.w3.org/WAI/GL/">可及性規範工作小組（Accessibility Guidelines Working Group</a>）對 WCAG 2.1的<a href="https://www.w3.org/2018/Process-20180201/#RecsW3C">推薦標準</a>。這包含<a href="https://www.w3.org/WAI/WCAG21/errata/">勘誤表</a>並在<a href="#changelog">變更紀錄</a>中描述。在某些時候，其他變更可能會納入<a href="https://www.w3.org/2018/Process-20180201/#revised-rec">編輯或修訂的建議</a>中。</p>
+            <p>如欲發表評論或意見，<a href="https://github.com/w3c/wcag/issues/new">請在W3C WCAG GitHub儲存庫中提交問題</a>。儘管本文件中擬議的成功準則參考了追蹤討論的問題，工作小組要求將公眾意見作為新問題提交，每個意見會視為一個問題。您可以藉由免費建立GitHub帳戶來提交解決問題。 如果GitHub中的問題無法提交，則請發送電子郵件至<a href="mailto:public-agwg-comments@w3.org?subject=WCAG%202.1%20public%20comment">public-agwg-comments@w3.org</a>（<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">評論檔案</a>） </p>
         </section>
         <section class="informative introductory" id="intro">
-			<h2>Introduction</h2>
+			<h2>介紹</h2>
 			<section>
-				<h3>Background on WCAG 2</h3>
-				<p>Web Content Accessibility Guidelines (WCAG) 2.1 defines how to make Web content more accessible to people with disabilities. Accessibility involves a wide range of disabilities, including visual, auditory, physical, speech, cognitive, language, learning, and neurological disabilities. Although these guidelines cover a wide range of issues, they are not able to address the needs of people with all types, degrees, and combinations of disability. These guidelines also make Web content more usable by older individuals with changing abilities due to aging and often improve usability for users in general.</p>
-				<p>WCAG 2.1 is developed through the <a href="https://www.w3.org/WAI/standards-guidelines/w3c-process/">W3C process</a> in cooperation with individuals and organizations around the world, with a goal of providing a shared standard for Web content accessibility that meets the needs of individuals, organizations, and governments internationally. WCAG 2.1 builds on WCAG 2.0 [[WCAG20]], which in turn built on WCAG 1.0 [[WAI-WEBCONTENT]] and is designed to apply broadly to different Web technologies now and in the future, and to be testable with a combination of automated testing and human evaluation. For an introduction to WCAG, see the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) Overview</a>.</p>
+				<h3>WCAG 2背景</h3>
+				<p>網頁內容可及性規範（WCAG）2.1為如何將網頁內容製作成讓身心障礙者更易於取得作了定義。可及性所含括的身心障礙範圍廣泛，包括視覺、聽覺、肢體、交談、認知、語言、學習和神經疾病等。雖然這些規範涵蓋的議題廣泛，但它們仍無法滿足所有類型、程度和多重身心障礙者的需求。這些規範也能讓網頁內容更易於讓因老化而身體功能衰退的年長者使用，並且通常也能夠提升一般人的使用性。
+                </p>
+				<p>WCAG 2.1是透過<a href="https://www.w3.org/WAI/standards-guidelines/w3c-process/">W3C程序</a>而與世界各地的個人和組織合作所共同開發的規範，其目標在於提供一個能符合個人、組織和各國政府需求之國際網頁內容可及性的共享標準。WCAG 2.1是建立於WCAG 2.0[WCAG20]的基礎上，WCAG 2.0則是基於WCAG 1.0 [WAI-WEBCONTENT]所規範而成，其目的在於將不同的網頁科技予以廣泛應用在現在和未來，並能夠透過結合自動化測試和人工評估而進行測試。有關WCAG的介紹，請參閱WCAG概述（<a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) Overview</a>）。</a>.</p>
                 
-				<p>Significant challenges were encountered in defining additional criteria to address cognitive, language, and learning disabilities, including a short timeline for development as well as challenges in reaching consensus on testability, implementability, and international considerations of proposals. Work will carry on in this area in future versions of WCAG. We encourage authors to refer to our supplemental guidance on <a href="https://www.w3.org/WAI/standards-guidelines/wcag/#supplement">improving inclusion for people with disabilities, including learning and cognitive disabilities, people with low-vision, and more</a>.</p>
+				<p>在定義額外的標準以處理認知、語言和學習障礙時，包含在短時間內開發及在可測試性、執行力，以及在提案時國際間考量等問題達成共識，都面臨到嚴峻的考驗。WCAG的未來版本將在此領域繼續開展工作更新。我們鼓勵編寫者參考這些關於<a href="https://www.w3.org/WAI/standards-guidelines/wcag/#supplement">改善含括身心障礙者，包括學習和認知障礙及弱視者等之補充規範</a>。</p>
 
-				<p>Web accessibility depends not only on accessible content but also on accessible Web browsers and other user agents. Authoring tools also have an important role in Web accessibility. For an overview of how these components of Web development and interaction work together, see:</p>
+				<p>網頁可及性並非只是仰賴可及性的內容，它也包括網頁瀏覽器及其他使用者代理之可及性。編輯工具在網頁可及性中也起著重要作用。有關網頁開發元件之間的交互作用與如何協同合作之概述，請參閱：</p>
+
 				<ul>
-					<li><strong><a href="https://www.w3.org/WAI/fundamentals/components/">Essential Components of Web Accessibility</a></strong></li>
-					<li><strong><a href="https://www.w3.org/WAI/standards-guidelines/uaag/">User Agent Accessibility Guidelines (UAAG) Overview</a></strong></li>
-					<li><strong><a href="https://www.w3.org/WAI/standards-guidelines/atag/">Authoring Tool Accessibility Guidelines (ATAG) Overview</a></strong></li>
+					<li><strong><a href="https://www.w3.org/WAI/fundamentals/components/">網頁可及性的主要元件</a></strong></li>
+					<li><strong><a href="https://www.w3.org/WAI/standards-guidelines/uaag/">使用者代理可及性規範（User Agent Accessibility Guidelines (UAAG)）</a></strong></li>
+					<li><strong><a href="https://www.w3.org/WAI/standards-guidelines/atag/">編輯工具可及性規範（Authoring Tool Accessibility Guidelines (ATAG)）</a></strong></li>
                 </ul>
-                <p>Where this document refers to <q>WCAG 2</q> it is intended to mean any and all versions of WCAG that start with 2.</p>
+                <p>本文件提及「WCAG 2」時，旨在表示以 2 開頭的任何及所有 WCAG 版本。</p>
 			</section>
 			<section>
-				<h3>WCAG 2 Layers of Guidance</h3>
-				<p>The individuals and organizations that use WCAG vary widely and include Web designers and developers, policy makers, purchasing agents, teachers, and students. In order to meet the varying needs of this audience, several layers of guidance are provided including overall <em>principles</em>, general <em>guidelines</em>, testable <em>success criteria</em> and a rich collection of <em>sufficient techniques</em>, <em>advisory techniques</em>, and <em>documented common failures</em> with examples, resource links and code.</p>
+				<h3>WCAG 2指引層次</h3>
+				<p>用WCAG的個人和組織之間的差異很大，其中包括網頁設計人員和開發人員、政策制定者，採購代理人、教師和學生等等在內。為了符合滿足此類群眾的不同需求，我們提供了幾個指引層次，包括總體<em>原則</em>、一般<em>指引</em>、可測試的<em>成功準則</em>，以及豐富的<em>充分技術</em>、<em>諮詢技術</em>和<em>常見錯誤</em>（包括範例、資源連結和代碼）。</p>
 				<ul>
 					<li>
-						<p><strong>Principles</strong> - At the top are four principles that provide the foundation for Web accessibility: <em>perceivable, operable, understandable, and robust</em>. See also <a href="https://www.w3.org/WAI/WCAG21/Understanding/intro#understanding-the-four-principles-of-accessibility">Understanding the Four Principles of Accessibility</a>.</p>
+						<p><strong>原則</strong> - 有四項原則作為網頁可及性之基礎，包括：<em>可感知、可操作、可理解和穩健性</em>。相關的細節，請另行參閱<a href="https://www.w3.org/WAI/WCAG21/Understanding/intro#understanding-the-four-principles-of-accessibility">理解可及性的四項原則</a>。</p>
 					</li>
 					<li>
-						<p><strong>Guidelines</strong> - Under the principles are guidelines. The 13 guidelines provide the basic goals that authors should work toward in order to make content more accessible to users with different disabilities. The guidelines are not testable, but provide the framework and overall objectives to help authors understand the success criteria and better implement the techniques.</p>
+						<p><strong>指引</strong> - 原則之下為指引。13項指引提供了基本目標，是編寫者為不同身心障礙使用者作出更具無障礙的內容所應努力的方向。這些指引不可測試，但它們提供了架構和整體目標，以幫助編寫者理解成功的標準，以及改善執行的技術。</p>
 					</li>
 					<li>
-						<p><strong>Success Criteria</strong> - For each guideline, testable success criteria are provided to allow WCAG 2.1 to be used where requirements and conformance testing are necessary such as in design specification, purchasing, regulation, and contractual agreements. In order to meet the needs of different groups and different situations, three levels of conformance are defined: A (lowest), AA, and AAA (highest). Additional information on WCAG levels can be found in <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#levels">Understanding Levels of Conformance</a>.</p>
+						<p><strong>成功準則</strong> - 針對各項指引，提供可測試的成功準則，以便在技術條件及符合性測試為必須的情況下（例如設計規格、採購、法規和契約協議）允許使用WCAG2.1。為能符合不同群體和不同情況的需要，本文定義了三個符合性等級：A（最低），AA和AAA（最高）。有關WCAG等級的更多資訊，請參閱<a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#levels">「理解符合性等級」（Understanding Levels of Conformance）</a>。
+                        </p>
 					</li>
 					<li>
-						<p><strong>Sufficient and Advisory Techniques</strong> - For each of the <em>guidelines</em> and <em>success criteria</em> in the WCAG 2.1 document itself, the working group has also documented a wide variety of <em>techniques</em>. The techniques are informative and fall into two categories: those that are <em>sufficient</em> for meeting the success criteria and those that are <em>advisory</em>. The advisory techniques go beyond what is required by the individual success criteria and allow authors to better address the guidelines. Some advisory techniques address accessibility barriers that are not covered by the testable success criteria. Where common failures are known, these are also documented. See also <a href="https://www.w3.org/WAI/WCAG21/Understanding/understanding-techniques">Sufficient and Advisory Techniques in Understanding WCAG 2.1</a>.</p>
+						<p><strong>充分和諮詢技術</strong> - 對於WCAG 2.1文件本身的各項<em>指引</em>和<em>成功準則</em>，工作小組也已記錄了五花八門的各類<em>技術</em>。這些技術深具資訊性並分為兩類：充分可符合成功準則的技術及能提供<em>諮詢</em>的技術。諮詢技術超出了個別成功準則的要求，並得以讓編寫者更適當的處理指引的問題。有些諮詢技術已解決了可測試成功準則所未涵蓋的可及性障礙。對已知的常見錯誤之處，也會予以記錄。另請參閱理解<a href="https://www.w3.org/WAI/WCAG21/Understanding/understanding-techniques">WCAG 2.0的充分和諮詢技術(Sufficient and Advisory Techniques in Understanding WCAG2.1)</a>。</p>
 					</li>
 				</ul>
-				<p>All of these layers of guidance (principles, guidelines, success criteria, and sufficient and advisory techniques) work together to provide guidance on how to make content more accessible. Authors are encouraged to view and apply all layers that they are able to, including the advisory techniques, in order to best address the needs of the widest possible range of users.</p>
-				<p>Note that even content that conforms at the highest level (AAA) will not be accessible to individuals with all types, degrees, or combinations of disability, particularly in the cognitive language and learning areas. Authors are encouraged to consider the full range of techniques, including the advisory techniques, as well as to seek relevant advice about current best practice to ensure that Web content is accessible, as far as possible, to this community. <a href="https://www.w3.org/WAI/WCAG21/Understanding/understanding-metadata">Metadata</a> may assist users in finding content most suitable for their needs. </p>
+				<p>所有這些指引層次（原則、指引、成功準則及充分和諮詢技術）彼此共同協作，以提供如何使內容更為無障礙的指引。我們鼓勵編寫者查看和應用他們所能使用的所有層次，包括諮詢技術在內，以便能達到最符合廣泛使用者的需求。</p>
+				<p>請注意，即使內容符合最高等級（AAA）也無法滿足所有類型、程度或多重身心障礙（特別是在語言認知和學習領域有障礙）的個人（個體）的無障礙需求。我們鼓勵編寫者儘可能的考慮所有技術（包括諮詢技術在內），以及尋求有關當前最佳實務的相關建議，以確保網頁內容無障礙，且儘可能擴及這個社群。<a href="https://www.w3.org/WAI/WCAG21/Understanding/understanding-metadata">詮釋資料（Metadatda）</a>可協助使用者找到最適合他們需求的內容。 </p>
 			</section>
 			<section>
-				<h3>WCAG 2.1 Supporting Documents</h3>
-				<p>The WCAG 2.1 document is designed to meet the needs of those who need a stable, referenceable technical standard. Other documents, called supporting documents, are based on the WCAG 2.1 document and address other important purposes, including the ability to be updated to describe how WCAG would be applied with new technologies. Supporting documents include: </p>
+				<h3>WCAG 2.1支援文件</h3>
+				<p>WCAG 2.1文件是作為符合那些需要一個穩定、可參考技術標準之需求的族群。其他所謂的支援文件，是基於WCAG 2.1文件並涉及其他重要目的，包括更新描述WCAG如何應用於新技術的能力。支援的文件包括： </p>
 				<ol class="enumar">
 					<li>
-						<p><strong><a href="https://www.w3.org/WAI/WCAG21/quickref/">How to Meet WCAG 2.1</a></strong> - A customizable quick reference to WCAG 2.1 that includes all of the guidelines, success criteria, and techniques for authors to use as they are developing and evaluating Web content. This includes content from WCAG 2.0 and WCAG 2.1 and can be filtered in many ways to help authors focus on relevant content.</p>
+						<p><strong><a href="https://www.w3.org/WAI/WCAG21/quickref/">如何符合WCAG 2.1</a></strong> - WCAG 2.1客製化的快速參考，包括編寫者在開發和評估網頁內容時使用的所有指引、成功準則和技術。這包括來自WCAG 2.0和WCAG 2.1的內容，並透過多種方式進行過濾以協助編寫者專注於相關內容。</p>
 					</li>
 					<li>
-						<p><strong><a href="https://www.w3.org/WAI/WCAG21/Understanding/">Understanding WCAG 2.1</a></strong> - A guide to understanding and implementing WCAG 2.1. There is a short "Understanding" document for each guideline and success criterion in WCAG 2.1 as well as key topics.</p>
+						<p><strong><a href="https://www.w3.org/WAI/WCAG21/Understanding/">理解WCAG 2.1</a></strong> - 理解和實施WCAG 2.1的指南。 WCAG 2.1中的每項指引和成功準則都有一個簡短的「理解」文件及關鍵主旨。</p>
 					</li>
 					<li>
-						<p><strong><a href="https://www.w3.org/WAI/WCAG21/Techniques/">Techniques for WCAG 2.1</a></strong> - A collection of techniques and common failures, each in a separate document that includes a description, examples, code and tests.</p>
+						<p><strong><a href="https://www.w3.org/WAI/WCAG21/Techniques/">WCAG 2.1的技術</a></strong> - 另以文件說明技術與常見錯誤集，內容包含描述、範例和程式碼。</p>
 					</li>
 					<li>
-						<p><strong><a href="https://www.w3.org/WAI/standards-guidelines/wcag/docs/">The WCAG Documents</a></strong> - A diagram and description of how the technical documents are related and linked.</p>
+						<p><strong><a href="https://www.w3.org/WAI/standards-guidelines/wcag/docs/">WCAG文件</a></strong> - 技術文件如何關聯與連結的圖表和說明。</p>
 					</li>
 				</ol>
-				<p>See <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) Overview</a> for a description of the WCAG 2.1 supporting material, including education resources related to WCAG 2. Additional resources covering topics such as the business case for Web accessibility, planning implementation to improve the accessibility of Web sites, and accessibility policies are listed in <a href="https://www.w3.org/WAI/Resources/Overview">WAI Resources</a>.</p>
+				<p>有關WCAG 2.1支援資料的說明，請<a href="https://www.w3.org/WAI/standards-guidelines/wcag/">參閱WCAG概述（Web Content Accessibility Guidelines (WCAG) Overview）</a>，其中也含括與WCAG 2相關的教材。額外的資源，涵蓋諸如資訊網無障礙的業務案例、提升網站無障礙的施行計畫，以及無障礙政策等議題，皆列於<a href="https://www.w3.org/WAI/Resources/Overview">資訊網可及性推動組織資源（Web Accessibility Initiative Resources，簡稱WAI Resources）</a>內。
+                </p>
 			</section>
         	<section>
-        		<h3>Requirements for WCAG 2.1</h3>
-                <p>WCAG 2.1 meets a set of <a href="https://w3c.github.io/wcag21/requirements/">requirements for WCAG 2.1</a> which, in turn, inherit requirements from WCAG 2.0. Requirements structure the overall framework of guidelines and ensure backwards compatibility. The Working Group also used a less formal set of acceptance criteria for success criteria, to help ensure success criteria are similar in style and quality to those in WCAG 2.0. These requirements constrained what could be included in WCAG 2.1. This constraint was important to preserve its nature as a dot-release of WCAG 2.</p>
+        		<h3>0.4 WCAG 2.1的要求</h3>
+                <p>WCAG 2.1符合<a href="https://w3c.github.io/wcag21/requirements/">WCAG 2.1的一系列要求</a>，而這些要求依續地繼承WCAG 2.0之要求。這些要求建構出規範的整體架構並確保向後相容性。工作小組亦使用了一套較不正式的成功準則驗收標準，以協助確保成功準則在風格和質量上與WCAG 2.0相似。這些要求限制了WCAG 2.1中可能包含的內容。此限制對保有其作為WCAG 2發布點（dot-release）的性質非常重要。
+                </p>
         	</section>
     		<section>
-                <h3>Comparison with WCAG 2.0</h3>
-                <p>WCAG 2.1 was initiated with the goal to improve accessibility guidance for three major groups: users with cognitive or learning disabilities, users with low vision, and users with disabilities on mobile devices. Many ways to meet these needs were proposed and evaluated, and a set of these were refined by the Working Group. Structural requirements inherited from WCAG 2.0, clarity and impact of proposals, and timeline led to the final set of success criteria included in this version. The Working Group considers that WCAG 2.1 incrementally advances web content accessibility guidance for all these areas, but underscores that not all user needs are met by these guidelines.</p>
+                <h3>0.5 與WCAG 2.0的比較</h3>
+                <p>WCAG 2.1啟動目標在於為三個主要群體提供一個更好的無障礙指引，三個主要群體的使用者包括：具有認知或學習障礙的使用者、弱視的使用者及對行動裝置使用不便者。符合這些需求的多種方法被提出並進行評估，而工作小組已針對其中一組方法進行改進。延續自WCAG 2.0的結構性要求、提案的透明度和影響，以及引導至成功準則最終確立的時間表皆包含在此版本內。工作小組認為WCAG 2.1正逐步推進所有這些領域的網頁內容可及性指引，但強調並非所有使用者的需求皆能藉由這些規範達到滿足。</p>
 
-				<p>WCAG 2.1 builds on and is backwards compatible with WCAG 2.0, meaning web pages that conform to WCAG 2.1 also conform to WCAG 2.0. Authors that are required by policy to conform with WCAG 2.0 will be able to update content to WCAG 2.1 without losing conformance with WCAG 2.0. Authors following both sets of guidelines should be aware of the following differences:</p>
+				<p>WCAG 2.1建立在WCAG 2.0的基礎上並向後相容，這意味著符合WCAG 2.1網頁也同樣符合WCAG 2.0。而編寫者受政策的要求需符合WCAG 2.0之規範，將可在不失去與WCAG 2.0之符合性下將內容更新為WCAG 2.1。同時遵循這兩套規範的編寫者應該注意以下差異：</p>
+
 				<section>
-					<h4>New Features in WCAG 2.1</h4>
-					<p>WCAG 2.1 extends WCAG 2.0 by adding new success criteria, definitions to support them, guidelines to organize the additions, and a couple additions to the conformance section. This additive approach helps to make it clear that sites which conform to WCAG 2.1 also conform to WCAG 2.0, thereby meeting conformance obligations that are specific to WCAG 2.0. The Accessibility Guidelines Working Group recommends that sites adopt WCAG 2.1 as their new conformance target, even if formal obligations mention WCAG 2.0, to provide improved accessibility and to anticipate future policy changes.</p>
-					<p>The following Success Criteria are new in WCAG 2.1:</p>
+					<h4>WCAG 2.1的新功能</h4>
+					<p>WCAG 2.1透過添加新的成功準則、支援這些標準的定義、編制補充內容的規範，以及一些有關符合性章節的幾項補充內容擴展為WCAG 2.1。這種累進的研究途徑有助於表明符合WCAG 2.1的網站也同樣符合WCAG 2.0，從而符合特別針對WCAG 2.0的合規性義務。即便正式合規性義務提及的是WCAG 2.0，可及性規範工作小組仍建議網站採用WCAG 2.1作為其新的合規性目標，以便能提供改良的無障礙內容及預先處理未來的政策變化。
+                    </p>
+
+					<p>以下的成功準則是WCAG 2.1中的新增內容：</p>
 					<ul>
-						<li>1.3.4 <a href="#orientation">Orientation</a> (AA)</li>
-						<li>1.3.5 <a href="#identify-input-purpose">Identify Input Purpose</a> (AA)</li>
-						<li>1.3.6 <a href="#identify-purpose">Identify Purpose</a> (AAA)</li>
-						<li>1.4.10 <a href="#reflow">Reflow</a> (AA)</li>
-						<li>1.4.11 <a href="#non-text-contrast">Non-Text Contrast</a> (AA)</li>
-						<li>1.4.12 <a href="#text-spacing">Text Spacing</a> (AA)</li>
-						<li>1.4.13 <a href="#content-on-hover-or-focus">Content on Hover or Focus</a> (AA)</li>
-						<li>2.1.4 <a href="#character-key-shortcuts">Character Key Shortcuts</a> (A)</li>
-						<li>2.2.6 <a href="#timeouts">Timeouts</a> (AAA)</li>
-						<li>2.3.3 <a href="#animation-from-interactions">Animation from Interactions</a> (AAA)</li>
-						<li>2.5.1 <a href="#pointer-gestures">Pointer Gestures</a> (A)</li>
-						<li>2.5.2 <a href="#pointer-cancellation">Pointer Cancellation</a> (A)</li>
-						<li>2.5.3 <a href="#label-in-name">Label in Name</a> (A)</li>
-						<li>2.5.4 <a href="#motion-actuation">Motion Actuation</a> (A)</li>
-						<li>2.5.5 <a href="#target-size">Target Size</a> (AAA)</li>
-						<li>2.5.6 <a href="#concurrent-input-mechanisms">Concurrent Input Mechanisms</a> (AAA)</li>
-						<li>4.1.3 <a href="#status-messages">Status Messages</a> (AA)</li>
+						<li>1.3.4 <a href="#orientation">螢幕方向</a> (AA)</li>
+						<li>1.3.5 <a href="#identify-input-purpose">識別輸入目的</a> (AA)</li>
+						<li>1.3.6 <a href="#identify-purpose">識別目的</a> (AAA)</li>
+						<li>1.4.10 <a href="#reflow">流動排版</a> (AA)</li>
+						<li>1.4.11 <a href="#non-text-contrast">非文字對比</a> (AA)</li>
+						<li>1.4.12 <a href="#text-spacing">文字間距</a> (AA)</li>
+						<li>1.4.13 <a href="#content-on-hover-or-focus">懸浮或焦點內容</a> (AA)</li>
+						<li>2.1.4 <a href="#character-key-shortcuts">快捷鍵</a> (A)</li>
+						<li>2.2.6 <a href="#timeouts">逾時</a> (AAA)</li>
+						<li>2.3.3 <a href="#animation-from-interactions">來自互動的動畫</a> (AAA)</li>
+						<li>2.5.1 <a href="#pointer-gestures">指標手勢</a> (A)</li>
+						<li>2.5.2 <a href="#pointer-cancellation">指標取消</a> (A)</li>
+						<li>2.5.3 <a href="#label-in-name">標籤名稱</a> (A)</li>
+						<li>2.5.4 <a href="#motion-actuation">動作啟動</a> (A)</li>
+						<li>2.5.5 <a href="#target-size">目標尺寸</a> (AAA)</li>
+						<li>2.5.6 <a href="#concurrent-input-mechanisms">並行輸入機制</a> (AAA)</li>
+						<li>4.1.3 <a href="#status-messages">狀態訊息</a> (AA)</li>
 					</ul>
-					<p>The new success criteria may reference new terms that have also been added to the glossary and form part of the normative requirements of the success criteria.</p>
-					<p>In the Conformance section, a third note about page variants has been added to <a href="#cc2">Full Pages</a>, and an option for machine-readable metadata added to <a href="#conformance-optional">Optional Components of a Conformance Claim</a>.</p>
+					<p>這些成功準則有許多都引用了新術語，而這些術語也已被添加到詞彙表，並構成成功準則正規要求的一部分。</p>
+					<p>在符合性的章節部分，有關頁面變形的第三個註釋已增加到<a href="#cc2">全頁</a>，且機器可讀詮釋資料的選項已增加到<a href="#conformance-optional">符合性聲明的可選組件（Optional Components of a Conformance Claim）</a>中。</p>
 				</section>
 				<section>
-					<h4>Numbering in WCAG 2.1</h4>
-					<p>In order to avoid confusion for implementers for whom backwards compatibility to WCAG 2.0 is important, new success criteria in WCAG 2.1 have been appended to the end of the set of success criteria within their guideline. This avoids the need to change the section number of success criteria from WCAG 2.0, which would be caused by inserting new success criteria between existing success criteria in the guideline, but it means success criteria in each guideline are no longer grouped by conformance level. The order of success criteria within each guideline does not imply information about conformance level; only the conformance level indicator (A / AA / AAA) on the success criterion itself indicates this. The <a href="https://www.w3.org/WAI/WCAG21/quickref/">WCAG 2.1 Quick Reference</a> provides ways to view success criteria grouped by conformance level, along with many other filter and sort options.</p>
+					<h4>WCAG 2.1的編號</h4>
+					<p>為了避免對WCAG 2.0向後相容之實施者造成混淆，WCAG 2.1的新成功準則已附加於規範中該組成功準則的最後部分。這樣能夠避免需要將WCAG 2.0成功準則的章節編號加以變更的情況，而變更編號的狀況是會在新的成功準則插入現有的成功準則規範中所造成的狀況，但這也意味著在各規範中的成功準則不再按符合性等級進行分組。各項規範中的成功準則順序，並非意味著與符合性等級的資訊相關；只有成功準則本身的符合性等級指示（A / AA / AAA）才能代表其等級高低。<a href="https://www.w3.org/WAI/WCAG21/quickref/">WCAG 2.1快速參考</a>提供了依符合性等級分類的成功準則之查看方法，同時也有許多其他篩選和排序的選項。</p>
 				</section>
 				<section>
-					<h4>Conformance to WCAG 2.1</h4>
-					<p>WCAG 2.1 uses the same conformance model as WCAG 2.0 with a couple additions, which is described in the <a href="#conformance">Conformance</a> section. It is intended that sites that conform to WCAG 2.1 also conform to WCAG 2.0, which means they meet the requirements of any policies that reference WCAG 2.0, while also better meeting the needs of users on the current Web. </p>
+					<h4>符合WCAG 2.1</h4>
+					<p>WCAG 2.1使用與WCAG 2.0相同的符合性模型並包含了幾項補充，而這在<a href="#conformance">符合性</a>部分中有所描述。這意謂著符合WCAG 2.1的網站也同樣能符合WCAG 2.0，代表著它們符合WCAG 2.0有關的任何政策的要求，同時也更能符合當前網頁使用者的需求。</p>
 				</section>
 			</section>
         	<section>
-        		<h3>Later Versions of Accessibility Guidelines</h3>
-        		<p>In parallel with WCAG 2.1, the Accessibility Guidelines Working Group is developing another major version of accessibility guidelines. The result of this work is expected to be a more substantial restructuring of web accessibility guidance than would be realistic for dot-releases of WCAG 2. The work follows a research-focused, user-centered design methodology to produce the most effective and flexible outcome, including the roles of content authoring, user agent support, and authoring tool support. This is a multi-year effort, so WCAG 2.1 is needed as an interim measure to provide updated web accessibility guidance to reflect changes on the web since the publication of WCAG 2.0. The Working Group might also develop additional interim versions, continuing with WCAG 2.2, on a similar short timeline to provide additional support while the major version is completed. </p>
+        		<h3>可及性規範更新版本</h3>
+        		<p>在有WCAG 2.1規範的同時，可及性規範工作小組正在開發另一個可及性規範的主要版本。這項工作的結果對於實際可行的WCAG 2發布點而言，預期會是一個對於資訊網可及性指引更為實質性的重整。這項工作遵循以研究為重心、以使用者為核心的設計方法製作出最有效並最具靈活性的結果，包括內容創作、使用者代理支援和創作工具支援的角色。這是一項需要多年努力的工作，因此需要WCAG 2.1作為臨時措施來提供更新的資訊網可及性指引，以反映自WCAG 2.0發布以來資訊網的變化。工作小組也可在類似的短時間表上開發其他臨時版本並繼續使用WCAG 2.2，以便在主要版本完成時提供額外支援。</p>
         	</section>
         </section>
         <section class="principle" id="perceivable">
-            <h2> Perceivable </h2>
-            <p>Information and user interface components must be presentable to users in ways they can perceive.</p>
+            <h2> 可感知 </h2>
+            <p>資訊及使用者介面元件應以使用者能察覺之方式呈現。</p>
 
             <section class="guideline">
-                <h3>Text Alternatives</h3>
-                <p>Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.</p>
+                <h3>替代文字</h3>
+                <p>為任何非文字的內容提供相等意義的替代文字，使這些內容能依人們的需求，轉變成大字版、點字、語音、符號或簡化過的語言等不同型態。</p>
 
                 <section data-include="sc/20/non-text-content.html" data-include-replace="true"></section>
             </section>
 
             <section class="guideline">
-                <h3>Time-based Media</h3>
-                <p>Provide alternatives for time-based media.</p>
+                <h3>時序媒體</h3>
+                <p>針對時序媒體提供替代內容。</p>
 
                 <section data-include="sc/20/audio-only-and-video-only-prerecorded.html" data-include-replace="true"></section>
 
@@ -161,8 +170,8 @@
             </section>
 
             <section class="guideline">
-                <h3>Adaptable</h3>
-                <p>Create content that can be presented in different ways (for example simpler layout) without losing information or structure.</p>
+                <h3>可調適</h3>
+                <p>建立能以不同方式呈現(例如簡化的版面)，而不會喪失資訊或結構的內容</p>
 
                 <section data-include="sc/20/info-and-relationships.html" data-include-replace="true"></section>
 
@@ -179,8 +188,8 @@
           </section>
 
             <section class="guideline">
-                <h3>Distinguishable</h3>
-                <p>Make it easier for users to see and hear content including separating foreground from background.</p>
+                <h3>可辨識</h3>
+                <p>讓使用者能更容易地看見及聽到內容、區分前景和背景。</p>
 
                 <section data-include="sc/20/use-of-color.html" data-include-replace="true"></section>
 
@@ -212,15 +221,15 @@
 
         </section>
         <section class="principle" id="operable">
-            <h2>Operable </h2>
-            <p>User interface components and navigation must be operable.</p>
+            <h2>可操作</h2>
+            <p>使用者介面元件及導覽功能應具可操作性。</p>
 
             <section class="guideline">
-                <h3>Keyboard Accessible</h3>
-                <p>Make all functionality available from a keyboard.</p>
-
+                <h3>鍵盤可操作</h3>
+                <p>讓所有的功能都能透過鍵盤使用。</p>
+                
                 <section data-include="sc/20/keyboard.html" data-include-replace="true"></section>
-
+                
                 <section data-include="sc/20/no-keyboard-trap.html" data-include-replace="true"></section>
 
                 <section data-include="sc/20/keyboard-no-exception.html" data-include-replace="true"></section>
@@ -230,8 +239,8 @@
             </section>
 
             <section class="guideline">
-                <h3>Enough Time</h3>
-                <p>Provide users enough time to read and use content.</p>
+                <h3>充足時間</h3>
+                <p>提供使用者充分的時間來閱讀及使用內容。</p>
 
                 <section data-include="sc/20/timing-adjustable.html" data-include-replace="true"></section>
 
@@ -248,8 +257,8 @@
             </section>
 
             <section class="guideline new">
-                <h3>Seizures and Physical Reactions</h3>
-                <p>Do not design content in a way that is known to cause seizures or physical reactions.</p>
+                <h3>預防痙攣和身體不適反應</h3>
+                <p>不要用任何已知會引發痙攣或身體反應的方式來設計內容。</p>
 
                 <section data-include="sc/20/three-flashes-or-below-threshold.html" data-include-replace="true"></section>
 
@@ -260,8 +269,8 @@
             </section>
 
             <section class="guideline">
-                <h3>Navigable</h3>
-                <p>Provide ways to help users navigate, find content, and determine where they are.</p>
+                <h3>可導覽</h3>
+                <p>提供協助使用者導覽、尋找內容及判斷所在的方法。</p>
 
                 <section data-include="sc/20/bypass-blocks.html" data-include-replace="true"></section>
 
@@ -286,9 +295,9 @@
             </section>
 
             <section class="guideline new">
-                <h3>Input Modalities</h3>
-                <p class="change">New</p>
-                <p>Make it easier for users to operate functionality through various inputs beyond keyboard.</p>
+                <h3>輸入方式</h3>
+                <p class="change">新</p>
+                <p>以鍵盤以外的各種輸入方式，讓使用者能輕鬆地進行功能性操作。</p>
 
                 <section data-include="sc/21/pointer-gestures.html" data-include-replace="true"></section>
 
@@ -306,12 +315,12 @@
 
         </section>
         <section class="principle" id="understandable">
-            <h2> Understandable </h2>
-            <p>Information and the operation of the user interface must be understandable.</p>
+            <h2>可理解</h2>
+            <p>資訊及使用者介面之操作應具可理解性</p>
 
             <section class="guideline">
-                <h3>Readable</h3>
-                <p>Make text content readable and understandable.</p>
+                <h3>可讀性</h3>
+                <p>讓文字內容可讀並可理解。</p>
 
                 <section data-include="sc/20/language-of-page.html" data-include-replace="true"></section>
 
@@ -328,8 +337,8 @@
             </section>
 
             <section class="guideline">
-                <h3>Predictable</h3>
-                <p>Make Web pages appear and operate in predictable ways.</p>
+                <h3>可預期性</h3>
+                <p>讓網頁以可預期的方式來呈現及運作。</p>
 
                 <section data-include="sc/20/on-focus.html" data-include-replace="true"></section>
 
@@ -344,8 +353,8 @@
             </section>
 
             <section class="guideline">
-                <h3>Input Assistance</h3>
-                <p>Help users avoid and correct mistakes.</p>
+                <h3>輸入協助</h3>
+                <p>幫助使用者避開及更正錯誤。</p>
 
                 <section data-include="sc/20/error-identification.html" data-include-replace="true"></section>
 
@@ -363,12 +372,12 @@
 
         </section>
         <section class="principle" id="robust">
-            <h2> Robust </h2>
-            <p>Content must be robust enough that it can be interpreted by a wide variety of user agents, including assistive technologies.</p>
+            <h2>穩健性</h2>
+            <p>網頁內容應可供身心障礙者以輔助工具讀取，並具有相容性。</p>
 
             <section class="guideline">
-                <h3>Compatible</h3>
-                <p>Maximize compatibility with current and future user agents, including assistive technologies.</p>
+                <h3>相容性</h3>
+                <p>針對目前及未來的使用者代理與輔助科技，最大化其相容性。</p>
 
                 <section data-include="sc/20/parsing.html" data-include-replace="true"></section>
 
@@ -380,151 +389,149 @@
 
         </section>
         <section>
-            <h1>Conformance</h1>
+            <h1>符合性</h1>
 
-            <p>This section lists requirements for <a>conformance</a> to WCAG 2.1. It also gives information about how to make conformance claims, which are optional. Finally, it describes what it means to be <a>accessibility supported</a>, since only accessibility-supported ways of using technologies can be <a>relied upon</a> for conformance. <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance">Understanding Conformance</a> includes further explanation of the accessibility-supported concept.</p>
+            <p>本章節列出<a>符合</a>WCAG 2.1的要求。同時針對如何作出符合性聲明也提供相關的資訊，這些聲明是可選的。最後，它描述了<a>支援無障礙</a>意味著什麼，因為只有<a>仰賴</a>使用科技方法的無障礙支援才能達到符合性。<a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance">了解符合性</a>包括對無障礙支援概念的進一步解釋說明。
+            </p>
         	
         	<section>
-        		<h2>Interpreting Normative Requirements</h2>
+        		<h2>解釋規範性要求</h2>
         		
-        		<p>The main content of WCAG 2.1 is <a>normative</a> and defines requirements that impact conformance claims. Introductory material, appendices, sections marked as "non-normative", diagrams, examples, and notes are <a>informative</a> (non-normative). Non-normative material provides advisory information to help interpret the guidelines but does not create requirements that impact a conformance claim.</p>
-        		<p>The key words MAY, MUST, MUST NOT, NOT RECOMMENDED, RECOMMENDED, SHOULD, and SHOULD NOT are to be interpreted as described in [[RFC2119]].</p>
+        		<p>WCAG 2.1的主要內容為<a>具規範性</a>，同時也定義了影響符合性聲明的要求。引導材料、附錄、標記為「非規範性」的部分、圖表、範例和註釋都是作為<a>參考</a>（非規範性）的內容。非規範性材料提供諮詢性資訊以協助解釋指引，但不會產生影響符合性聲明的要求。</p>
         	</section>
 
             <section id="conformance-reqs">
-                <h2>Conformance Requirements</h2>
-                <p>In order for a Web page to conform to WCAG 2.1, all of the following conformance requirements must be satisfied:</p>
+                <h2>符合性要求</h2>
+                <p>為能使網頁符合WCAG 2.1，必須達到以下所有的符合性要求：</p>
 
 				<!-- This section is quoted in Understanding Conformance. If updated, the update needs to be copied there. -->
                 <section id="cc1">
-                    <h3>Conformance Level</h3>
-                    <p>One of the following levels of conformance is met in full.</p>
+                    <h3>符合性等級</h3>
+                    <p>完全符合下列其中一項符合性等級。</p>
                     <ul>
-                        <li>For Level A conformance (the minimum level of conformance), the <a>Web page</a>
-                            <a>satisfies</a> all the Level A Success Criteria, or a <a>conforming alternate version</a> is provided.</li>
-                        <li>For Level AA conformance, the Web page satisfies all the Level A and Level AA Success Criteria, or a Level AA conforming alternate version is provided.</li>
-                        <li>For Level AAA conformance, the Web page satisfies all the Level A, Level AA and Level AAA Success Criteria, or a Level AAA conforming alternate version is provided.</li>
+                        <li>就符合性等級A（符合性的最低等級）而言，<a>網頁</a>須<a>符合</a>所有等級A的成功準則、或者提供<a>符合的替代版本</a>。</li>
+                        <li>就符合性等級AA而言，網頁須符合所有等級A和等級AA的成功準則，或者提供符合等級AA的替代版本。</li>
+                        <li>就符合性等級AAA而言，網頁須符合所有等級A、等級AA和等級AAA的成功準則，或者提供符合等級AAA的替代版本。</li>
                     </ul>
-                    <p class="note">Although conformance can only be achieved at the stated levels, authors are encouraged to report (in their claim) any progress toward meeting success criteria from all levels beyond the achieved level of conformance.</p>
-                    <p class="note">It is not recommended that Level AAA conformance be required as a general policy for entire sites because it is not possible to satisfy all Level AAA Success Criteria for some content.</p>
+                    <p class="note">雖然符合性只能在指定的等級內完成，但本文鼓勵網頁設計者報告（在聲明中）在已達成的符合性等級之外，所有等級中即將達到成功準則的任何進展。</p>
+                    <p class="note">我們不建議將等級AAA的符合性作為整個網站的一貫策略，因為部分內容是無法達到等級AAA成功準則。</p>
                 </section>
 
             	<!-- This section is quoted in Understanding Conformance. If updated, the update needs to be copied there. -->
             	<section id="cc2">
-                    <h3>Full pages</h3>
-                    <p><a>Conformance</a> (and conformance level) is for full <a>Web page(s)</a> only, and cannot be achieved if part of a Web page is excluded.</p>
-                    <p class="note">For the purpose of determining conformance, alternatives to part of a page's content are considered part of the page when the alternatives can be obtained directly from the page, e.g., a long description or an alternative presentation of a video.</p>
-                    <p class="note">Authors of Web pages that cannot conform due to content outside of the author's control may consider a <a href="#conformance-partial">Statement of Partial Conformance</a>.</p>
-                  <p class="note">A full page includes each variation of the page that is automatically presented by the page for various screen sizes (e.g. variations in a responsive Web page). Each of these variations needs to conform (or needs to have a conforming alternate version) in order for the entire page to conform.</p>
+                    <h3>全頁</h3>
+                    <p><a>符合性</a>（和符合性等級）僅適用於完整的網頁。而如果排除網頁的一部分，則無法實現符合性。</p>
+                    <p class="note">為了確認符合性，當可以直接從頁面獲得替代內容時，替代頁面內容的部分可被視為是該頁面的一部分，例如，影片的長描述或替代呈現。</p>
+                    <p class="note">由於超出控制之外的內容而無法滿足網頁要求的網頁設計者，可以考慮<a href="#conformance-partial">部分符合性聲明</a>。</p>
+                  <p class="note">全頁包括由各種螢幕尺寸自動呈現的各種頁面變化（例如，響應式網頁中的變化）。 這些變化中的每一項都需要符合（或需要有一個符合的替代版本），以使全頁可以相符。</p>
                 </section>
 
             	<!-- This section is quoted in Understanding Conformance. If updated, the update needs to be copied there. -->
             	<section id="cc3">
-                    <h3>Complete processes</h3>
-                    <p>When a <a>Web page</a> is one of a series of Web pages presenting a <a>process</a> (i.e., a sequence of steps that need to be completed in order to accomplish an activity), all Web pages in the process conform at the specified level or better. (Conformance is not possible at a particular level if any page in the process does not conform at that level or better.)</p>
-                    <p class="example">An online store has a series of pages that are used to select and purchase products. All pages in the series from start to finish (checkout) conform in order for any page that is part of the process to conform.</p>
+                    <h3>完整程序</h3>
+                    <p>一個<a>網頁</a>是呈現<a>程序</a>的一組連續網頁之一，（亦即，為了達成一個活動而需要完成的一個序列步驟），程序中的所有網頁皆須滿足指定的等級或更高的等級。（如果程序中的任何頁面並未符合某一等級或更高等級，則無法達到該特定等級的符合性。）</p>
+                    <p class="example">線上的購物商店有一組系列網頁用於選擇和購買產品。該系列中的所有網頁從開始到結束（結帳）都須符合順序，以便使作為程序中的一部分之任一頁面能進行確認。</p>
                 </section>
 
             	<!-- This section is quoted in Understanding Conformance. If updated, the update needs to be copied there. -->
             	<section id="cc4">
-                    <h3>Only Accessibility-Supported Ways of Using Technologies</h3>
+                    <h3>僅使用科技的無障礙支援方法</h3>
 
-                    <p>Only <a>accessibility-supported</a> ways of using <a>technologies</a> are <a>relied upon</a> to satisfy the success criteria. Any information or functionality that is provided in a way that is not accessibility supported is also available in a way that is accessibility supported. (See <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#accessibility-support">Understanding accessibility support</a>.)</p>
+                    <p>僅<a>仰賴</a>使用<a>科技</a>的<a>無障礙支援</a>方法來滿足成功準則。以非無障礙方式所提供的任何資訊或功能，也能以支援無障礙的方式使用。（請參閱<a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#accessibility-support">了解支援無障礙</a>。）</p>
 
                 </section>
 
             	<!-- This section is quoted in Understanding Conformance. If updated, the update needs to be copied there. -->
             	<section id="cc5">
-                    <h3>Non-Interference</h3>
-                    <p>If <a> technologies </a> are used in a way that is not <a>accessibility supported</a>, or if they are used in a non-conforming way, then they do not block the ability of users to access the rest of the page. In addition, the <a>Web page</a> as a whole continues to meet the conformance requirements under each of the following conditions:</p>
+                    <h3>不干涉</h3>
+                    <p>如果<a>技術</a>以不<a>支援無障礙</a>的方式使用，或者以不具符合性的方式使用，則它們不應妨礙到使用者擷取其他頁面的能力。此外，全部的<a>網頁</a>應依據以下各條件持續滿足符合性要求：</p>
                     <ol>
-                        <li>when any technology that is not <a>relied upon</a> is turned on in a user agent,</li>
-                        <li>when any technology that is not relied upon is turned off in a user agent, and</li>
-                        <li>when any technology that is not relied upon is not supported by a user agent</li>
+                        <li>在未依賴任何技術時可由使用者代理開啟，</li>
+                        <li>在未依賴任何技術時可由使用者代理關閉，以及</li>
+                        <li>在未依賴任何技術時使用者代理並未提供支援。</li>
                     </ol>
-                    <p>In addition, the following success criteria apply to all content on the page, including content that is not otherwise relied upon to meet conformance, because failure to meet them could interfere with any use of the page:</p>
+                    <p>另外，以下成功準則適用於網頁上的所有內容，包括其他不依賴滿足符合性要求的內容，因為未能達到以下標準可能會防礙到任何頁面的使用：</p>
                     <ul>
-                        <li><strong>1.4.2 - Audio Control</strong>,</li>
-                        <li><strong>2.1.2 - No Keyboard Trap</strong>,</li>
-                        <li><strong>2.3.1 - Three Flashes or Below Threshold</strong>, and</li>
-                        <li><strong>2.2.2 - Pause, Stop, Hide</strong>.</li>
+                        <li><strong>1.4.2 - 音訊控制</strong>，</li>
+                        <li><strong>2.1.2 - 無鍵盤受限</strong>，</li>
+                        <li><strong>2.3.1 - 閃爍三次或低於閾值</strong>，和</li>
+                        <li><strong>2.2.2 - 暫停、停止和隱藏。</strong>。</li>
                     </ul>
-                    <p class="note">If a page cannot conform (for example, a conformance test page or an example page), it cannot be included in the scope of conformance or in a conformance claim.</p>
+                    <p class="note">如果頁面無法符合（例如，符合性測試頁面或示範頁面），則不能將其包含在符合性範圍內或符合性聲明中。</p>
 
-                	<p>For more information, including examples, see <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#conformance-requirements">Understanding Conformance Requirements</a>.</p>
+                	<p>有關更多資訊（包括範例），請參閱<a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#conformance-requirements">了解符合性要求</a>。</p>
 
                 </section>
             </section>
 
             <section id="conformance-claims">
-                <h2>Conformance Claims (Optional) </h2>
-                <p>Conformance is defined only for <a>Web pages</a>. However, a conformance claim may be made to cover one page, a series of pages, or multiple related Web pages.</p>
+                <h2>符合性聲明（選用）</h2>
+                <p>符合性只針對<a>網頁</a>加以定義。但是，符合性聲明可以涵蓋一個頁面、一系列頁面或多個相關網頁。</p>
 
                 <section id="conformance-required">
-                    <h3>Required Components of a Conformance Claim</h3>
-                    <p>Conformance claims are <strong>not required</strong>. Authors can conform to WCAG 2.1 without making a claim. However, if a conformance claim is made, then the conformance claim <strong>must</strong> include the following information:</p>
+                    <h3>符合性聲明的必要組件</h3>
+                    <p>符合性聲明並<strong>非必須</strong>。著作者可在不提出聲明的情況下滿足WCAG 2.1。但是，若一旦提出符合性聲明，則符合性聲明<strong>必須</strong>包含以下資訊：</p>
                     <ol>
-                        <li><strong>Date</strong> of the claim</li>
-                        <li><strong>Guidelines title, version and URI </strong> "Web Content Accessibility Guidelines 2.1 at <a href="https://www.w3.org/TR/WCAG21/">https://www.w3.org/TR/WCAG21/</a>"</li>
-                        <li><strong>Conformance level</strong> satisfied: (Level A, AA or AAA)</li>
+                        <li>聲明<strong>日期</strong></li>
+                        <li><strong>指引的標題、版本及URI</strong> "網頁內容可及性規 2.1 at <a href="https://www.w3.org/TR/WCAG21/">https://www.w3.org/TR/WCAG21/</a>"</li>
+                        <li>達到<strong>符合性等級</strong>：（等級A，AA或AAA）</li>
                         <li>
-                            <p><strong>A concise description of the Web pages</strong>, such as a list of URIs for which the claim is made, including whether subdomains are included in the claim.</p>
-                            <p class="note">The Web pages may be described by list or by an expression that describes all of the URIs included in the claim.</p>
-                            <p class="note">Web-based products that do not have a URI prior to installation on the customer's Web site may have a statement that the product would conform when installed.</p>
+                            <p><strong>網頁的簡略描述</strong>，例如已提出的聲明之URI列表，包括聲明中是否包含子網域。</p>
+                            <p class="note">網頁可透過清單或透過在聲明中所有URI的表達來描述。</p>
+                            <p class="note">在客戶網站安裝之前並無URI，應要有一聲明表示產品在安裝後會符合標準。</p>
                         </li>
-                        <li>A list of the <strong>
-                                <a>Web content technologies</a>
-                                <a>relied upon</a></strong>.</li>
+                        <li> <strong>
+                            <a>依賴的</a><a>網頁內容技術</a></strong>清單。</li>
                     </ol>
-                    <p class="note">If a conformance logo is used, it would constitute a claim and must be accompanied by the required components of a conformance claim listed above.</p>
+                    <p class="note">如果使用符合性標誌，它將會構成一個聲明並且必須附帶上列的符合性聲明所要求的組件。</p>
                 </section>
 
                 <section id="conformance-optional">
-                    <h3>Optional Components of a Conformance Claim </h3>
-                    <p>In addition to the required components of a conformance claim above, consider providing additional information to assist users. Recommended additional information includes:</p>
+                    <h3>符合性聲明的可選組件</h3>
+                    <p>除了上述符合性聲明的必要組件外，請考慮提供其他資訊來協助使用者。：</p>
                     <ul>
-                        <li>A list of success criteria beyond the level of conformance claimed that have been met. This information should be provided in a form that users can use, preferably machine-readable metadata.</li>
-                        <li>A list of the specific technologies that are " <em>used but not <a>relied upon</a></em>."</li>
-                        <li>A list of user agents, including assistive technologies that were used to test the content.</li>
-                        <li class="new">A list of specific accessibility characteristics of the content, provided in machine-readable metadata.</li>
-                        <li>Information about any additional steps taken that go beyond the success criteria to enhance accessibility.</li>
-                        <li>A machine-readable metadata version of the list of specific technologies that are <a>relied upon</a>.</li>
-                        <li>A machine-readable metadata version of the conformance claim.</li>
+                        <li>在已達成符合性聲明的等級之外，要有成功準則列表。應以使用者可使用的形式提供此資訊，最好是機器可讀詮釋資料。</li>
+                        <li>「<em>已使用但<a>未依賴</a></em>」的特定技術列表</li>
+                        <li>使用者代理列表，包括用於測試內容的輔助科技。</li>
+                        <li class="new">特定的無障礙特性內容之列表，提供機器可讀的詮釋資料。</li>
+                        <li>成功準則以外所採取的所有額外步驟之資訊，以便加強可訪問性。</li>
+                        <li><a>依賴</a>特定技術列表的機器可讀詮釋資料版本。</li>
+                        <li>符合性聲明的機器可讀詮釋資料版本。</li>
                     </ul>
 
-                	<p class="note">Refer to <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#conformance-claims">Understanding Conformance Claims</a> for more information and example conformance claims.</p>
-                	<p class="note">Refer to <a href="https://www.w3.org/WAI/WCAG21/Understanding/understanding-metadata">Understanding Metadata</a> for more information about the use of metadata in conformance claims.</p>
+                	<p class="note">有關符合性聲明的更多資訊和範例，請參閱<a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#conformance-claims">了解符合性聲明</a>。</p>
+                	<p class="note">有關在符合性聲明中使用詮釋資料的更多資訊，請參閱了解<a href="https://www.w3.org/WAI/WCAG21/Understanding/understanding-metadata">詮釋資料</a>。</p>
 
                 </section>
             </section>
 
             <section id="conformance-partial">
-                <h2>Statement of Partial Conformance - Third Party Content</h2>
-                <p>Sometimes, Web pages are created that will later have additional content added to them. For example, an email program, a blog, an article that allows users to add comments, or applications supporting user-contributed content. Another example would be a page, such as a portal or news site, composed of content aggregated from multiple contributors, or sites that automatically insert content from other sources over time, such as when advertisements are inserted dynamically.</p>
-                <p>In these cases, it is not possible to know at the time of original posting what the uncontrolled content of the pages will be. It is important to note that the uncontrolled content can affect the accessibility of the controlled content as well. Two options are available:</p>
+                <h2>部分符合性聲明 - 第三方內容</h2>
+                <p>有時，網頁在建構後會加入其他內容。例如，電子郵件程式、部落格、可讓使用者加入評論的文章或支援使用者提供內容的應用程式。另一個例子就是一個網頁，例如由多個投稿者內容聚合所組成的入口網站或新聞網站，或者隨著時間的推移而自動插入來自其他內容來源的網站，例如在動態插入廣告時。</p>
+                <p>在這些情況下，在原始內容發布時，不可能知道頁面的不受控制內容是什麼。重要的是要注意，不受控制的內容也會影響受控內容的無障礙性。對此，有兩個選項可供選擇：</p>
                 <ol>
                     <li>
-                        <p>A determination of conformance can be made based on best knowledge. If a page of this type is monitored and repaired (non-conforming content is removed or brought into conformance) within two business days, then a determination or claim of conformance can be made since, except for errors in externally contributed content which are corrected or removed when encountered, the page conforms. No conformance claim can be made if it is not possible to monitor or correct non-conforming content;</p>
-                        <p><strong>OR</strong></p>
+                        <p>可依據個人所知進行符合性的判斷。若此類網頁經監督程序並在兩個營業日內進行維修（未符合的內容已移除或已達符合性），則便能依此作出符合性的判定或聲明，除了外部提供的內容有誤（在遭遇那些錯誤時已進行修正或移除），此網頁已然達到符合性要求。如果無法監督程序或修正未符合內容，則不能提出符合性聲明；</p>
+                        <p><strong>或</strong></p>
                     </li>
                     <li>
-                        <p>A "statement of partial conformance" may be made that the page does not conform, but could conform if certain parts were removed. The form of that statement would be, "This page does not conform, but would conform to WCAG 2.1 at level X if the following parts from uncontrolled sources were removed." In addition, the following would also be true of uncontrolled content that is described in the statement of partial conformance:</p>
+                        <p>當網頁未符合，但如果某些部分被刪除便可以符合時，便可做出「部分符合性聲明」。該聲明的形式是，「如果將以下部分中不受控制的來源刪除，則該未符合網頁可符合WCAG 2.1中的某個等級。」 此外，對於部分符合性聲明中描述不受控制的內容，也會出現以下情況：</p>
                         <ol>
-                            <li>It is not content that is under the author's control.</li>
-                            <li>It is described in a way that users can identify (e.g., they cannot be described as "all parts that we do not control" unless they are clearly marked as such.)</li>
+                            <li>不受網頁設計者控制的內容。</li>
+                            <li>以使用者可識別的方式描述（例如，它們不能被描述為「所有我們未能控制的部分」，除非它們有被這樣明確地標記著。）</li>
                         </ol>
                     </li>
                 </ol>
             </section>
 
             <section id="conformance-partial-lang">
-                <h2>Statement of Partial Conformance - Language</h2>
-                <p>A "statement of partial conformance due to language" may be made when the page does not conform, but would conform if <a>accessibility support</a> existed for (all of) the language(s) used on the page. The form of that statement would be, "This page does not conform, but would conform to WCAG 2.1 at level X if accessibility support existed for the following language(s):"</p>
+                <h2>部分符合性聲明 - 語言</h2>
+                <p>「基於語言的部分符合性聲明」可能會在網頁未符合時產生，但如果網頁上使用的（所有）語言皆存在無障礙支援時，便達符合性。該聲明陳述的形式是，「此網頁未能符合，但若以下語言具備<a>無障礙支援</a>，則此網頁符合WCAG 2.1 某個等級：」</p>
             </section>
 
         </section>
         <section id="glossary">
-            <h1>Glossary</h1>
+            <h1>詞彙表</h1>
             <dl id="terms">
 
                 <dt data-include="terms/20/abbreviation.html" data-include-replace="true"></dt>
@@ -725,31 +732,31 @@
       <div data-include="input-purposes.html" data-include-replace="true"></div>
       
     	<section class="appendix" id="changelog">
-    		<h2>Change Log</h2>
-    		<p>This section shows changes for WCAG 2.1 since its publication as a W3C Recommendation. These changes are also recorded as <a href="https://www.w3.org/WAI/WCAG21/errata/">errata</a>.</p>
-        <p>Changes since the <a href="https://www.w3.org/TR/2018/REC-WCAG21-20180605/">W3C Recommendation of 05 June 2018</a>:</p>
+    		<h2>變更紀錄</h2>
+    		<p>本節介紹 WCAG 2.1 自發布作為 W3C 推薦標準以來的變更。這些變更也記錄為<a href="https://www.w3.org/WAI/WCAG21/errata/">勘誤表</a>。</p>
+        <p>自<a href="https://www.w3.org/TR/2018/REC-WCAG21-20180605/">2018 年 6 月 5 日發布W3C推薦標準</a>以來的變更：</p>
         <ul>
-					<li>In the <a href="https://www.w3.org/TR/WCAG21/#sotd">Status of This Document</a> the paragraph beginning "This document has been reviewed by W3C Members..." appears twice. The first instance of this paragraph has been removed.</li>
-					<li>In the <a href="https://www.w3.org/TR/WCAG21/#intro">Introduction</a>, several (but not all) references to "WCAG 2.0" has been changed to "WCAG 2.1".</li>
-					<li>In the <a href="https://www.w3.org/TR/WCAG21/#numbering-in-wcag-2-1">0.5.2 Numbering in WCAG 2.1</a>, the words "critera" and "ccriteria" have been changed to "criteria".</li>
-					<li>In <a href="https://www.w3.org/TR/WCAG21/#reflow">1.4.10 Reflow</a>, the first note had a supernumary "Note" indicator which has been removed.</li>
-					<li>In <a href="https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus">1.4.13 Content on Hover or Focus</a>, the word "dismissable" has been changed to "dismissible".</li>
-					<li>In <a href="https://www.w3.org/TR/WCAG21/#robust">4. Robust</a>, repetition of the word "by" has been removed.</li>
-					<li>In <a href="https://www.w3.org/TR/WCAG21/#cc2">5.2.2 Full pages</a>, the third note began with "New" which has been removed.</li>
-					<li>In <a href="https://www.w3.org/TR/WCAG21/#conformance-required">5.3.1 Required Components of a Conformance Claim</a> the editorial note "In WCAG 2.0 this was a dated URI, which may need to be adjusted when this becomes a Rec." has been removed.</li>
-					<li>In the definition for <a href="https://www.w3.org/TR/WCAG21/#dfn-keyboard-interface">keyboard interface</a>, the second (of three) note has been changed to be an example of the first note, leaving only two actual notes.</li>
-					<li>In the definition for <a href="https://www.w3.org/TR/WCAG21/#dfn-technologies">technology</a>, the third note has been changed to be an example.</li>
-					<li>In <a href="https://www.w3.org/TR/WCAG21/#input-purposes">7. Input Purposes for User Interface Components</a>, the word "county" has been changed to "country".</li>
-					<li>In <a href="https://www.w3.org/TR/WCAG21/#orientation">1.3.4 Orientation</a>, the note referencing "binary display orientation" has been clarified to read "content is not necessarily restricted to landscape or portrait display orientation".</li>
-    			<li>In <a href="https://www.w3.org/TR/WCAG21/#issue-container-generatedID-43">a note in the definition of accessibility supported</a>, references to "Conformance Criterion" were changed to "Conformance Requirement".</li>
-					<li>In the <a href="https://www.w3.org/TR/WCAG21/#dfn-relative-luminance">definition of relative luminance</a>, the red threshold was updated from 0.03928 to 0.04045.</li>
-          <li>In <a href="https://www.w3.org/TR/WCAG21/#parsing">4.1.1 Parsing</a> one note was deleted, and two notes were added, including: "This Success Criterion should be considered as always satisfied for any content using HTML or XML."</li> 
+					<li>在<a href="https://www.w3.org/TR/WCAG21/#sotd">本文件的狀態</a>中，以「本文件已由W3C成員審閱...」的段落出現兩次。本段的第一個實例已被刪除。</li>
+					<li>在<a href="https://www.w3.org/TR/WCAG21/#intro">介紹</a>中，對“WCAG 2.0”的多個（但不是全部）引用已更改為“WCAG 2.1”。</li>
+					<li><a href="https://www.w3.org/TR/WCAG21/#numbering-in-wcag-2-1">在WCAG 2.1 的 0.5.2 編號中</a>，單字「critera」和「ccriteria」已更改為「criteria」。</li>
+					<li>在<a href="https://www.w3.org/TR/WCAG21/#reflow">1.4.10 流動排版</a>中，第一個註釋有一個多餘的「註釋」指示符，該指示符已被刪除。</li>
+					<li>在<a href="https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus">1.4.13 懸停或焦點內容</a>容中，“可移除”一詞已更改為“可移除”。</li>
+					<li>在<a href="https://www.w3.org/TR/WCAG21/#robust">4. Robust</a>中，重複的“by”一詞已被刪除。</li>
+					<li>在<a href="https://www.w3.org/TR/WCAG21/#cc2">5.2.2 全頁</a>中，第三個註釋以“New”開頭，已被刪除。</li>
+					<li>在<a href="https://www.w3.org/TR/WCAG21/#conformance-required">5.3.1 符合性聲明的必要組件</a>中，編輯註釋「在 WCAG 2.0 中，這是一個過時的 URI，當它成為建議時可能需要進行調整。」已刪除。</li>
+					<li>在<a href="https://www.w3.org/TR/WCAG21/#dfn-keyboard-interface">鍵盤介面</a>的定義中，第二個（三個之中）註釋已變更為第一個註釋的範例，僅留下兩個實際註釋。</li>
+					<li>在<a href="https://www.w3.org/TR/WCAG21/#dfn-technologies">技術</a>的定義中，第三個註釋已更改為範例。</li>
+					<li>在<a href="https://www.w3.org/TR/WCAG21/#input-purposes">7. 使用者介面元件的輸入目的</a>中，單字「county」已變更為「country」。</li>
+					<li>在<a href="https://www.w3.org/TR/WCAG21/#orientation">1.3.4 螢幕方向</a>中，引用「二進位顯示方向」的註釋已澄清為「內容不一定限於橫向或縱向顯示方向」。</li>
+    			    <li>在<a href="https://www.w3.org/TR/WCAG21/#issue-container-generatedID-43">提供的無障礙支援定義的註釋</a>中，對“符合性標準”的引用更改為“符合性要求”。</li>
+					<li>在<a href="https://www.w3.org/TR/WCAG21/#dfn-relative-luminance">相對亮度的定義</a>中，紅色閾值從0.03928更新為0.04045。</li>
+                    <li>在<a href="https://www.w3.org/TR/WCAG21/#parsing">4.1.1 語法分析</a>中，刪除了一條註釋，並添加了兩個註釋，其中包括：“對於使用 HTML 或 XML 的任何內容，應將此成功準則視為始終滿足。”</li> 
 				</ul>
-    		<p>The full <a href="https://github.com/w3c/wcag/commits/master/guidelines">commit history to WCAG 2.1</a> is available.</p>
+    		<p><a href="https://github.com/w3c/wcag/commits/master/guidelines">WCAG 2.1</a>的完整提交歷史記錄。</p>
     	</section>
     	<section class="appendix informative section" id="acknowledgements">
-    		<h3>Acknowledgments</h3>
-    		<p>Additional information about participation in the Accessibility Guidelines Working Group (AG WG) can be found on the <a href="https://www.w3.org/WAI/GL/">Working Group home page</a>.</p>
+    		<h3>致謝</h3>
+    		<p>有關參與AG WG的更多資訊，請參見<a href="https://www.w3.org/WAI/GL/">工作小組</a>主頁。</p>
     		<div data-include="../acknowledgements/ag-wg-active.html" data-include-replace="true"></div>
     		<div data-include="../acknowledgements/ag-contributors.html" data-include-replace="true"></div>
     		<div data-include="../acknowledgements/funders.html" data-include-replace="true"></div>

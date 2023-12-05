@@ -1,28 +1,28 @@
 <section class="sc">
    					
-   <h4>Pointer Cancellation</h4>
+   <h4>指標取消</h4>
    					
    <p class="conformance-level">A</p>
    					
-   <p>For <a>functionality</a> that can be operated using a <a>single pointer</a>, at least one of the following is true:</p>
+   <p>對於可以使用<a>單一指標</a>操作的<a>功能</a>，至少須滿足下列條件之一：</p>
    					
    <dl>
    
-   <dt>No Down-Event</dt>
-     <dd>The <a>down-event</a> of the pointer is not used to execute any part of the function;</dd>
+   <dt>無向下事件</dt>
+     <dd>指標的<a>向下事件</a>不被用於執行任何部分的功能；</dd>
       						
-   <dt>Abort or Undo</dt>
-     <dd>Completion of the function is on the <a>up-event</a>, and a <a>mechanism</a> is available to abort the function before completion or to undo the function after completion;</dd>
+   <dt>中止或取消</dt>
+     <dd>該功能的完成在<a>向上事件</a>，並且有一種<a>機制</a>可以在完成之前中止該功能或在</dd>
       						
-   <dt>Up Reversal</dt>
-     <dd>The up-event reverses any outcome of the preceding down-event;</dd>
+   <dt>向上逆轉</dt>
+     <dd>向上事件逆轉先前的向下事件之任何結果。</dd>
       						
-   <dt>Essential</dt>
-     <dd>Completing the function on the down-event is <a>essential</a>.</dd>
+   <dt>必要性</dt>
+     <dd>完成向下事件的功能有其<a>必要性</a>。</dd>
       						
    </dl>
-   <p class="note">Functions that emulate a keyboard or numeric keypad key press are considered essential.</p>
+   <p class="note">模擬鍵盤或數字小鍵盤按鍵的功能屬於必要性。</p>
    					
-  <p class="note">This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology).</p>
+  <p class="note">此要求適用於解釋指標動作的網頁內容（亦即，這不適用於需要使用者代理或輔助科技的動作）。</p>
 	
 </section>

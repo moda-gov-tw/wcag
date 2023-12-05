@@ -1,47 +1,33 @@
-<dt><dfn>contrast ratio</dfn></dt>
+<dt><dfn>對比值</dfn></dt>
 <dd>
    
-   <p>(L1 + 0.05) / (L2 + 0.05), where</p>
+   <p>對比值即(L1＋0.05)÷(L2＋0.05)，其中</p>
    
    <ul>
       
-      <li>L1 is the <a>relative luminance</a> of the lighter of the colors, and
+      <li>L1 是亮色的<a>相對亮度</a>，而
       </li>
       
-      <li>L2 is the <a>relative luminance</a> of the darker of the colors.
+      <li>L2 是暗色的<a>相對亮度</a>。
       </li>
       
    </ul>
    
-   <p class="note">Contrast ratios can range from 1 to 21 (commonly written 1:1 to 21:1).</p>
+   <p class="note">對比值的範圍是從 1 到 21( 也常寫成 1:1 到21:1)。</p>
    
-   <p class="note">Because authors do not have control over user settings as to how text is rendered
-      (for example font smoothing or anti-aliasing), the contrast ratio for text can be
-      evaluated with anti-aliasing turned off.
+   <p class="note">為網頁設計者沒辦法控制文字要如何繪製等設定(例如字型平滑或反鋸齒)，因此文字的對比值係以關閉反鋸齒的情況來評估。
    </p>
    
-   <p class="note">For the purpose of Success Criteria 1.4.3 and 1.4.6, contrast is measured with respect
-      to the specified background over which the text is rendered in normal usage. If no
-      background color is specified, then white is assumed.
+   <p class="note">成功準則 1.4.3 及 1.4.6 當中的對比係按照正常繪製用法中的指定背景來測量。如果沒有指定背景色彩，則假設為白色。
    </p>
    
-   <p class="note">Background color is the specified color of content over which the text is to be rendered
-      in normal usage. It is a failure if no background color is specified when the text
-      color is specified, because the user's default background color is unknown and cannot
-      be evaluated for sufficient contrast. For the same reason, it is a failure if no text
-      color is specified when a background color is specified.
+   <p class="note">背景色彩係文字在正常繪製用法中所指定要呈現的內容色彩。如果指定文字色彩而未指定背景色彩，則因使用者的預設背景色彩未知，使得無法評估對比是否充足，視為未通過相關指引；同樣的理由，如果指定背景色彩卻沒有指定文字色彩，也算未通過相關指引。
    </p>
    
-   <p class="note">When there is a border around the letter, the border can add contrast and would be
-      used in calculating the contrast between the letter and its background. A narrow border
-      around the letter would be used as the letter. A wide border around the letter that
-      fills in the inner details of the letters acts as a halo and would be considered background.
+   <p class="note">文字周圍如有邊框，則此邊框可增加對比，計算文字與其背景對比時也以此邊框為準。字母周圍的窄邊框會被當成字母；字母周圍的寬邊框若填滿字母內部細節且形成暈輪的話，則視為背景。
    </p>
    
-   <p class="note">WCAG conformance should be evaluated for color pairs specified in the content that
-      an author would expect to appear adjacent in typical presentation. Authors need not
-      consider unusual presentations, such as color changes made by the user agent, except
-      where caused by authors' code.
+   <p class="note">網站無障礙檢測係以內容中所指定的色彩配對來評估，此色彩配對係網頁設計者預期在典型呈現之中毗鄰的色彩。網頁設計者毋須考慮不尋常的呈現情況，例如由使用者代理造成的色彩變更，除非這些不尋常的情況是由網頁設計者的程式碼所致。
    </p>
    
 </dd>
